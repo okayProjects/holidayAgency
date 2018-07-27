@@ -135,6 +135,122 @@ body {
     color: #B49882;
 }
 
+/*footer*/
+
+footer {
+	background-image: url(../images/footer-background-image.jpg);
+	padding-top: 50px;
+}
+
+.col h4, .col-auto h4  {
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+footer .col p {
+	color: #fff;
+	font-size: 15px;
+	text-align: justify;
+	padding: 0 40px 50px;
+	line-height: 30px;
+}
+
+.nested > div {
+	color: #fff;
+	font-size: 15px;
+	padding: 0;
+}
+
+.nested div:first-child {
+	padding: 0 70px 60px 0;
+	font-weight: bold;
+	text-align: right;
+}
+
+.nested div:last-child {
+	padding: 0 130px 0 0;
+}
+
+.parish-office .nested div {
+margin-bottom: 7px;
+}
+
+footer .container {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1550px;
+}
+
+footer div[class*="service"] h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 50px 0;
+
+}
+
+footer div[class*="service"] h5 {
+	font-weight: bold;
+		border-bottom: 1px solid #000;
+}
+
+footer div[class*="service"] {
+	background-color: #fff;
+	text-align: center;
+	padding: 0 100px 30px;
+}
+
+footer div[class*="service"] h6, footer div[class*="service"] p {
+	color: #000;
+}
+
+footer div[class*="service"] .col-6, footer div[class*="service"] .col-6 p {
+	padding: 0 30px;
+}
+
+footer div[class*="service"] h5 {
+	padding-bottom: 30px;
+}
+
+.las {
+	border-right: 1px solid #000;
+}
+
+footer .footer-bottom {
+	background-color: #222222;
+}
+
+footer .footer-bottom {
+	padding: 20px 0;
+}
+
+footer .footer-bottom i, footer .footer-bottom i a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+
+}
+
+footer .footer-bottom i a:hover, footer .footer-bottom .to-the-top a:hover, footer .footer-bottom i:hover {
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .footer-bottom .fa-copyright {
+	float: right;
+}
+
+footer .footer-bottom .to-the-top a {
+	font-weight: normal;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
 @media(max-width: 768px){
 	.carousel-item img {
 	max-width: 100%;
@@ -144,4 +260,13 @@ body {
 	width: 40px;
 	height: 45px;
 	}
+	footer .container {
+		max-width: 330px;
+	}
+.nested div:last-child {
+	padding: 0 60px 0 0;
+	}
+	footer div[class*="service"] {
+	padding: 30px;
+}
 }
