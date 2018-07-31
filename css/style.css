@@ -7,6 +7,10 @@ body {
 	background-color: inherit;
 }
 
+.navbar-scroll {
+	background-color: #274747;
+}
+
 .navbar .collapse {
 	justify-content: center;
 }
@@ -18,11 +22,14 @@ body {
 	margin-left: 20px;
 }
 
+.navbar .navbar-nav .nav-link-scroll-change {
+	color: #DBD9D9;
+}
+
 .navbar  .navbar-nav .nav-link:hover {
 	-webkit-transform: scale(1.1);
 	    -ms-transform: scale(1.1);
 	        transform: scale(1.1);
-	color: #544545;
 }
 
 .navbar .navbar-brand img {
@@ -48,14 +55,14 @@ body {
 	background-color: #e0d9d9;
 }
 
-
-.carousel {
+/*my-jumbotron-carousel*/
+.my-jumbotron-carousel .carousel {
 	width: 100%;
 	height: 770px;
 	overflow: hidden;
 }
 
-.carousel-item {
+.my-jumbotron-carousel .carousel-item {
 	-webkit-animation: scale 60s infinite;
 	        animation: scale 60s infinite;
 	-webkit-animation-delay: 0.7s;
@@ -63,7 +70,7 @@ body {
 	        animation-delay: 0.7s;
 }
 
-.carousel-item img {
+.my-jumbotron-carousel .carousel-item img {
 	width: 100%;
 	height: 770px;
 	opacity: 0.7;
@@ -101,49 +108,124 @@ body {
     }
 }
 
-.carousel-caption {
+.my-jumbotron-carousel .carousel-caption {
 	width: 35%;
-	height: 23%;
+	height: 18%;
 	background-color: rgba(0, 0, 0, 0.2);
 	margin: 0 auto;
-	margin-bottom: 8%;
+	margin-bottom: 4%;
 	border-radius: 5px;
 	padding: 5px;
-	box-shadow: 2px 2px 6px #bdbfbd;
+	box-shadow: 2px 2px 6px #000;
 }
 
-.carousel-caption h5, .carousel-caption p {
+.my-jumbotron-carousel .carousel-caption h5, .carousel-caption p {
 	font-weight: bold;
 	color: #fff;
 	text-align: center;
 }
 
-.carousel-caption h5 {
+.my-jumbotron-carousel .carousel-caption h5 {
 	font-size: 25px;
 	margin: 2.5% 0;
 }
 
-.btn-outline-primary {
-    color: #fff;
-    border-color: #fff;
-    font-weight: bold;
+/*priest-carousel*/
+
+.priests {
+	background-image: url('../images/priests-background-image.jpg');
+	background-size: cover;
+	background-attachment: fixed;
 }
 
-.btn-outline-primary:hover {
-    background-color: #fff;
-    border-color: #fff;
-    color: #B49882;
+.priest-carousel-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 0;
+}
+
+.priests blockquote h3 {
+	line-height: 40px;
+	padding-top: 50px;
+	padding: 30px;
+	color: #DBD9D9;
+	opacity: 0.5;
+}
+
+.priest-carousel-container > div {
+	width: 250px;
+	height: 300px;
+}
+
+.priest-container-center {
+	flex: 2;
+	margin-left: 150px;
+}
+
+.priest-container-center .card {
+	margin-right: 50px;
+}
+
+.priest-container-center .wierusz-center, .priest-container-center .tomaszewski-center {
+	display: none;
+}
+
+.priest-carousel-container .carousel-item > img {
+	width: 100%;
+	height: 300px;
+	filter: grayscale();
+}
+
+/*section parish-figures*/
+
+.parish-figures{
+	background-image: url(../images/las3.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 400px;
+}
+
+.parish-figures-container {
+	height: 400px;
+}
+
+.parish-figures .container div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 25px; 
+}
+
+.parish-figures-container div h5 {
+	color: #e0e5e3;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.parish-figures-container div p {
+	color: #ddd0d0;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 4%;
+}
+
+.parish-figures-container div:last-child h5 p {
+	margin-left: -35%;
+}
+.parish-figures-container div:nth-child(2) h5 p {
+	margin-left: 5%;
 }
 
 /*footer*/
 
 footer {
 	background-image: url(../images/footer-background-image.jpg);
+	filter: sepia(80%);
 	padding-top: 50px;
 }
 
-.col h4, .col-auto h4  {
-	color: #fff;
+.col h4  {
+	color: #DBD9D9;
 	text-transform: uppercase;
 	margin-bottom: 30px;
 	text-align: center;
@@ -151,15 +233,51 @@ footer {
 }
 
 footer .col p {
-	color: #fff;
+	color: #DBD9D9;
 	font-size: 15px;
 	text-align: justify;
-	padding: 0 40px 50px;
+	padding: 0 40px;
 	line-height: 30px;
 }
 
-.nested > div {
+footer .about-us .modal .card-header {
+	background-color: #125558;
+}
+
+footer .about-us .modal .card-header:hover {
+	background-color: #274747;
+}
+
+footer .about-us .modal .card-body {
+	line-height: 40px;
+	padding: 40px;
+}
+
+footer .about-us button {
+	width: 84%;
+	margin: 0 37px 50px;
+	background-color: inherit;
+	border-color: #DBD9D9;
+}
+
+footer .about-us button:hover {
+	background-color: #274747;
+	border: none;
+}
+
+footer .about-us .modal button {
+	color: #DBD9D9;
+	font-size: 20px;
+	border: none;
+}
+
+footer .about-us .modal button:hover {
+	text-decoration: none;
 	color: #fff;
+}
+
+.nested > div {
+	color: #DBD9D9;
 	font-size: 15px;
 	padding: 0;
 }
@@ -178,11 +296,12 @@ footer .col p {
 margin-bottom: 7px;
 }
 
-footer .container {
-	margin: 0 auto;
+footer .service-time-container {
+	margin: 0;
 	padding: 0;
-	max-width: 1550px;
+	max-width: 1583px;
 }
+
 
 footer div[class*="service"] h3 {
 	text-transform: uppercase;
@@ -193,11 +312,11 @@ footer div[class*="service"] h3 {
 
 footer div[class*="service"] h5 {
 	font-weight: bold;
-		border-bottom: 1px solid #000;
+	border-bottom: 1px solid #000;
 }
 
 footer div[class*="service"] {
-	background-color: #fff;
+	background-color: #DBD9D9;
 	text-align: center;
 	padding: 0 100px 30px;
 }
@@ -214,20 +333,13 @@ footer div[class*="service"] h5 {
 	padding-bottom: 30px;
 }
 
-.las {
-	border-right: 1px solid #000;
-}
-
 footer .footer-bottom {
-	background-color: #222222;
-}
-
-footer .footer-bottom {
+	background-color: #274747;
 	padding: 20px 0;
 }
 
 footer .footer-bottom i, footer .footer-bottom i a {
-	color: #fff;
+	color: #DBD9D9;
 	text-decoration: none;
 	padding: 10px;
 
@@ -235,7 +347,7 @@ footer .footer-bottom i, footer .footer-bottom i a {
 
 footer .footer-bottom i a:hover, footer .footer-bottom .to-the-top a:hover, footer .footer-bottom i:hover {
 	font-weight: bold;
-	color: #fff;
+	color: #DBD9D9;
 	text-decoration: none;
 }
 
@@ -245,28 +357,130 @@ footer .footer-bottom .fa-copyright {
 
 footer .footer-bottom .to-the-top a {
 	font-weight: normal;
-	color: #fff;
+	color: #DBD9D9;
 	text-decoration: none;
 }
 
-
-
 @media(max-width: 768px){
-	.carousel-item img {
+    .my-jumbotron-carousel .carousel-item img {
 	max-width: 100%;
-	height: 400px;
+	height: 200px;
 	}
 	.navbar .navbar-brand img {
 	width: 40px;
 	height: 45px;
 	}
-	footer .container {
-		max-width: 330px;
+	footer div[class*="service"] h3 {
+		padding: 0;
+		font-size: 18px;
+		margin: 0;
 	}
-.nested div:last-child {
-	padding: 0 60px 0 0;
+
+	footer div[class*="service"] h5 {
+		margin: 0;
+		padding: 0;
+		font-size: 15px;
 	}
+
+	footer div[class*="service"] {
+		padding: 0;
+	}
+
+	footer div[class*="service"] h6, footer div[class*="service"] p {
+		font-size: 14px;
+		margin: 0;
+	}
+
+	footer div[class*="service"] .col-6, footer div[class*="service"] .col-6 p {
+		padding: 0 5px;
+	}
+
+	footer div[class*="service"] h5 {
+	padding-bottom: 0;
+	}
+	.col h4 {
+		font-size: 18px;
+	}
+
+	.nested div:first-child{
+		font-size: 12px;
+		padding:: 0 50px;
+	}
+	.nested div:last-child {
+	padding: 0 2px 0;
+	font-size: 12px;
+	}
+	footer .address, footer .parish-office {
+		padding: 0 40px;
+	}
+
 	footer div[class*="service"] {
 	padding: 30px;
-}
+	}
+	footer .about-us button {
+		width: 80%;
+	}
+	footer .col p {
+		font-size: 11px;
+	}
+	
+
+	/*priest-carousel*/
+
+	.priest-carousel-container {
+		padding: 0;
+	}
+
+	.priests {
+		padding-top: 15px;
+	}
+
+	.priests h3 {
+		line-height: 20px;
+		font-size: 15px;
+	}
+
+	.priest-carousel-container > div {
+		width: 100px;
+		height: 200px;
+	}
+
+	.priest-container-center {
+		display: none;
+	}
+
+	.priest-carousel-container .carousel-item > img {
+		width: 100%;
+		height: 130px;
+	}
+	/*section parish-figures*/
+
+	.parish-figures{
+		height: 200px;
+	}
+
+	.parish-figures-container {
+		height: 200px;
+	}
+
+	.parish-figures .container div {
+		padding-left: 10px;
+	}
+
+	.parish-figures-container div h5 {
+		font-size: 25px;
+	}
+
+	.parish-figures-container div p {
+		font-size: 10px;
+		font-weight: bold;
+	}
+
+	.parish-figures-container div:last-child h5 p {
+		color: #fff;
+		margin-left: -35%;
+	}
+	.parish-figures-container div:nth-child(2) h5 p {
+		margin-left: 5%;
+	}
 }
