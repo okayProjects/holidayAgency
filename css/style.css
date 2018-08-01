@@ -1,12 +1,11 @@
-/*font-family: 'Open Sans', sans-serif;
-font-family: 'Gloria Hallelujah', cursive;
-font-family: 'Pacifico', cursive;*/
-
 body {
 	font-family: 'Open Sans', sans-serif;
+	background-color: #125558;
 }
+
+
 .navbar {
-	background-color: inherit;
+	background-color: initial;
 }
 
 .navbar-scroll {
@@ -148,16 +147,31 @@ body {
 	color: #000;
 }
 
-.updates-board p, .updates-board h4, .updates-board ul > li {
+.updates-board-container {
+	display: flex;
+}
+
+.hover-style {
+	height: 300px;
+	overflow: hidden;
+	transform: perspective(1000px) rotateY(30deg);
+	border: 2px solid grey;
+	box-shadow: 10px 10px 10px grey;
+}
+
+
+
+.updates-board p, .updates-board h4 {
 	font-size: 18px;
 	color: #000;
 	padding: 20px 80px;
 }
 
 .updates-board ul > li {
+	font-size: 18px;
+	color: #000;
 	margin: 20px 0 20px 80px;
 	padding: 0;
-
 }
 
 /*priest-carousel*/
@@ -178,7 +192,7 @@ body {
 	line-height: 40px;
 	padding-top: 50px;
 	padding: 30px;
-	color: #DBD9D9;
+	color: #fff;
 	opacity: 0.5;
 	font-family: 'Pacifico', cursive;
 }
@@ -371,7 +385,6 @@ footer .footer-bottom i, footer .footer-bottom i a {
 	color: #DBD9D9;
 	text-decoration: none;
 	padding: 10px;
-
 }
 
 footer .footer-bottom i a:hover, footer .footer-bottom .to-the-top a:hover, footer .footer-bottom i:hover {
@@ -390,6 +403,196 @@ footer .footer-bottom .to-the-top a {
 	text-decoration: none;
 }
 
+/*INTENCJE*/
+
+.white-stripe {
+	background-color: #fff;
+	width: 100%;
+	height: 100px;
+	margin-top: 98px;
+}
+
+.service-times {
+	
+}
+
+.service-times h3 {
+	color: #dbd9d9;
+	text-align: center;
+	padding: 50px 0;
+	margin: 0 auto;
+}
+
+.nav-tabs li a {
+	color: #dbd9d9;
+	padding: 0 45px;
+}
+
+nav-tabs .nav-item {
+	padding: 0 1x;
+}
+
+.table-hover {
+	background-color: #274747;
+}
+
+.my-table-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	padding: 30px;
+}
+
+.table-image-container {
+	flex: 1;
+	padding-right: 20px;
+}
+
+.table-responsive-sm {
+	flex: 6; 
+}
+
+.table-image-container img {
+	width: 100%;
+	height: 90%;
+	border-radius: 10px;
+}
+
+.table-image-container img:nth-child(2), .table-image-container img:nth-child(3) {
+	display: none;
+}
+
+.table th, .table td {
+	color: #dbd9d9;
+}
+
+.table th, .table td {
+	border: none;
+}
+
+/*end of INTENCJE*/
+
+/*SAKRAMENTY*/
+
+/*scrollspy*/
+
+.white-stripe {
+	background-color: #fff;
+	width: 100%;
+	height: 100px;
+	margin-top: 98px;
+}
+
+.my-container {
+	margin: 0 auto;
+	width: 70%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.my-container .list-group {
+	margin-top: 50px;
+	flex: 1;
+	margin-right: 30px;
+}
+
+.list-group-item.active {
+	background-color: #274747;
+    border-color: #274747;
+}
+
+.my-container .scrollspy-example {
+	flex: 4;
+	position: relative;
+	height: 450px;
+	overflow-y: scroll;
+	padding: 50px 40px 0 30px;
+	margin-top: 50px;
+}
+
+.my-container .scrollspy-example h4, .my-container .scrollspy-example p {
+	color: #dbd9d9;
+	text-align: justify;
+	line-height: 30px;
+}
+
+.my-container .scrollspy-example h5 {
+	color: #dbd9d9;
+	padding: 30px 0;
+}
+
+.my-container .scrollspy-example h4 {
+	padding: 10px 0;
+}
+
+.statistics-container {
+	display: flex;
+	flex-direction: ;
+	width: 100%;
+	height: 300px;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+
+.statistics-container div {
+	width: 30px;
+	height: 50px;
+	border-radius: 10%;
+	background-color: #e74c3c;
+	margin-left: 8%;
+	margin-top: 31%;
+	transition-duration: 5s;
+	color: #dbd9d9;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.statistics-container div:first-of-child {
+	transition-property: margin-top, background;
+}
+
+.statistics-container div:nth-of-child(2) {
+	transition-property: margin-top, background;
+}
+
+.statistics-container div:last-of-child {
+	transition-property: margin-top, background;
+}
+
+.statistics-container:hover > .one {
+	background-color: green;
+	margin-top: 10%;
+	height: 215px;
+}
+
+.statistics-container:hover > .two {
+	background-color: yellow;
+	margin-top: 2%;
+	height: 280px;
+	transition-delay: 1s;
+}
+
+.statistics-container:hover > .three {
+	background-color: blue;
+	margin-top: 4%;
+	height: 263px;
+	transition-delay: 2s;
+}
+
+.statistics-years span {
+	color: #dbd9d9;
+	padding-left: 55px;
+}
+
+.statistics-years {
+	margin-bottom: 100px;
+	border-bottom: 1px solid #fff;
+}
+
+/*END OF SAKRAMENTY*/
+
 @media(max-width: 768px){
     .my-jumbotron-carousel .carousel-item img {
 	max-width: 100%;
@@ -399,38 +602,49 @@ footer .footer-bottom .to-the-top a {
 	width: 40px;
 	height: 45px;
 	}
+
+	/*updates*/
+	.hover-style {
+	transform: perspective(1000px) rotateY(30deg);
+	border: 2px solid grey;
+	box-shadow: 10px 10px 10px grey;
+	}
+	.updates-board p, .updates-board h4 {
+		font-size: 15px;
+		padding: 20px 10px;
+	}
+
+	.updates-board ul > li {
+		font-size: 15px;
+		margin: 0 20px 10px;
+		padding: 0;	
+	}
 	footer div[class*="service"] h3 {
 		padding: 0;
 		font-size: 18px;
 		margin: 0;
 	}
-
 	footer div[class*="service"] h5 {
 		margin: 0;
 		padding: 0;
 		font-size: 15px;
 	}
-
 	footer div[class*="service"] {
 		padding: 0;
 	}
-
 	footer div[class*="service"] h6, footer div[class*="service"] p {
 		font-size: 14px;
 		margin: 0;
 	}
-
 	footer div[class*="service"] .col-6, footer div[class*="service"] .col-6 p {
-		padding: 0 5px;
+		padding: 2px 20px;
 	}
-
 	footer div[class*="service"] h5 {
 	padding-bottom: 0;
 	}
 	.col h4 {
 		font-size: 18px;
 	}
-
 	.nested div:first-child{
 		font-size: 12px;
 		padding:: 0 50px;
@@ -442,7 +656,6 @@ footer .footer-bottom .to-the-top a {
 	footer .address, footer .parish-office {
 		padding: 0 40px;
 	}
-
 	footer div[class*="service"] {
 	padding: 30px;
 	}
@@ -453,31 +666,25 @@ footer .footer-bottom .to-the-top a {
 		font-size: 11px;
 	}
 	
-
 	/*priest-carousel*/
 
 	.priest-carousel-container {
 		padding: 0;
 	}
-
 	.priests {
 		padding-top: 15px;
 	}
-
 	.priests h3 {
 		line-height: 20px;
 		font-size: 15px;
 	}
-
 	.priest-carousel-container > div {
 		width: 100px;
 		height: 200px;
 	}
-
 	.priest-container-center {
 		display: none;
 	}
-
 	.priest-carousel-container .carousel-item > img {
 		width: 100%;
 		height: 130px;
@@ -487,29 +694,73 @@ footer .footer-bottom .to-the-top a {
 	.parish-figures{
 		height: 200px;
 	}
-
 	.parish-figures-container {
 		height: 200px;
 	}
-
 	.parish-figures .container div {
 		padding-left: 10px;
 	}
-
 	.parish-figures-container div h5 {
 		font-size: 25px;
 	}
-
 	.parish-figures-container div p {
 		font-size: 10px;
 		font-weight: bold;
 	}
-
 	.parish-figures-container div:last-child h5 p {
 		color: #fff;
 		margin-left: -35%;
 	}
 	.parish-figures-container div:nth-child(2) h5 p {
 		margin-left: 5%;
+	}
+
+	/*INTENCJE*/
+	.white-stripe {
+	height: 50px;
+	}
+	.table-image-container {
+		display: none;
+	}
+	.service-times ul > li:nth-child(5) {
+		margin-left: -15px;
+	}
+
+	/*SAKRAMENTY*/
+
+	.table-image-container {
+		display: none;
+	}
+	.my-container {
+		display: block;
+	}
+	.footer-bottom {
+		position: relative;
+		font-size: 12px;
+	}
+	.my-container .scrollspy-example {
+		height: 350px;
+	}
+	.my-container .scrollspy-example p {
+		font-size: 11px;
+	}
+	.my-container .scrollspy-example h4 {
+		font-size: 18px;
+	}
+	.statistics-container {
+		height: 150px;
+	}
+	.statistics-container:hover > .one {
+		height: 130px;
+	}
+	.statistics-container:hover > .two {
+		height: 145px;
+	}
+	.statistics-container:hover > .three {
+		height: 141px;
+	}
+	.statistics-years span {
+	padding-left: 12px;
+	font-size: 14px;
 	}
 }
