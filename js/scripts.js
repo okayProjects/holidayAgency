@@ -14,7 +14,7 @@ $(window).scroll(function() {
 
 
 $('.wierusz-inner').mouseenter(function() {
-	$('.wierusz-center').fadeIn(3000);
+	$('.wierusz-center').fadeIn();
 });
 
 $('.wierusz-inner').mouseleave(function() {
@@ -22,7 +22,7 @@ $('.wierusz-inner').mouseleave(function() {
 });
 
 $('.tomaszewski-inner').mouseenter(function() {
-	$('.priest-carousel-container .tomaszewski-center').fadeIn(3000);
+	$('.priest-carousel-container .tomaszewski-center').fadeIn();
 });
 
 $('.tomaszewski-inner').mouseleave(function() {
