@@ -1,5 +1,8 @@
 body {
 	font-family: 'Open Sans', sans-serif;
+}
+
+.body-with-background-color {
 	background-color: #125558;
 }
 
@@ -13,7 +16,9 @@ body {
 }
 
 .navbar .collapse {
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -59,15 +64,13 @@ body {
 /*my-jumbotron-carousel*/
 .my-jumbotron-carousel .carousel {
 	width: 100%;
-	height: 770px;
-	overflow: hidden;
+	height: 100vh;
 }
 
 .my-jumbotron-carousel .carousel-item {
 	-webkit-animation: scale 60s infinite;
 	        animation: scale 60s infinite;
 	-webkit-animation-delay: 0.7s;
-	        -o-animation-delay: 0.7s;
 	        animation-delay: 0.7s;
 }
 
@@ -98,14 +101,14 @@ body {
         display: block;
         -webkit-transform: scale(1);
                 transform: scale(1);
-                opacity: 0.6;
+                
     }
 
     100% {
         display: block;
         -webkit-transform: scale(1.4);
                 transform: scale(1.4);
-        		opacity: 1;     
+        		     
     }
 }
 
@@ -117,7 +120,8 @@ body {
 	margin-bottom: 4%;
 	border-radius: 5px;
 	padding: 5px;
-	box-shadow: 2px 2px 6px #000;
+	-webkit-box-shadow: 2px 2px 6px #000;
+	        box-shadow: 2px 2px 6px #000;
 }
 
 .my-jumbotron-carousel .carousel-caption h5, .carousel-caption p {
@@ -135,9 +139,10 @@ body {
 
 .updates-board {
 	font-family: 'Gloria Hallelujah', cursive;
-	padding: 70px 0 50px;
-	background-image: url('../images/11.jpg');
+	padding: 70px 50px 220px;
+	background-image: url('../images/updates-board-background.jpg');
 	background-size: cover;
+	height: 100vh;
 }
 
 .updates-board h3 {
@@ -148,15 +153,23 @@ body {
 }
 
 .updates-board-container {
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .hover-style {
 	height: 300px;
 	overflow: hidden;
-	transform: perspective(1000px) rotateY(30deg);
+	-webkit-transform: perspective(1000px) rotateY(30deg);
+	        transform: perspective(1000px) rotateY(30deg);
 	border: 2px solid grey;
-	box-shadow: 10px 10px 10px grey;
+	-webkit-box-shadow: 10px 10px 10px grey;
+	        box-shadow: 10px 10px 10px grey;
 }
 
 
@@ -171,7 +184,19 @@ body {
 	font-size: 18px;
 	color: #000;
 	margin: 20px 0 20px 80px;
-	padding: 0;
+}
+
+.updates-board-container div > p i {
+	font-size: 50px;
+	color: grey;
+}
+
+.hover-style i {
+	font-size: 40px;
+	color: darkred;
+	margin: 20px 150px 0;
+	    -webkit-transform: perspective(100px) rotateY(29deg) rotateX(-41deg);
+	            transform: perspective(100px) rotateY(29deg) rotateX(-41deg);
 }
 
 /*priest-carousel*/
@@ -183,8 +208,12 @@ body {
 }
 
 .priest-carousel-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	padding: 80px 0;
 }
 
@@ -203,7 +232,9 @@ body {
 }
 
 .priest-container-center {
-	flex: 2;
+	-webkit-box-flex: 2;
+	    -ms-flex: 2;
+	        flex: 2;
 	margin-left: 150px;
 }
 
@@ -218,48 +249,51 @@ body {
 .priest-carousel-container .carousel-item > img {
 	width: 150px;
 	height: 200px;
-	filter: grayscale();
+	-webkit-filter: grayscale();
+	        filter: grayscale();
 }
 
 /*section parish-figures*/
 
-.parish-figures{
-	background-image: url(../images/1.jpg);
+.parish-figures {
+	position: relative;
+	background-image: url(../images/parish-figures-background.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	height: 400px;
+	height: 500px;
 }
 
 .parish-figures-container {
-	height: 400px;
-}
-
-.parish-figures .container div {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: 25px; 
+	height: 500px;
 }
 
-.parish-figures-container div h5 {
-	color: #e0e5e3;
+.parish-figures-container div > h5 {
+	font-size: 50px;
+	color: darkdarkred;
 	font-weight: bold;
-	font-size: 40px;
 }
 
-.parish-figures-container div p {
-	color: #0093dd;
+.number-caption {
 	font-size: 25px;
-	font-weight: bold;
-	padding: 4%;
+	color: blue;
+	position: absolute;
 }
 
-.parish-figures-container div:last-child h5 p {
-	margin-left: -35%;
+.area-number-caption {
+	transform: translate(-16%, -550%);
 }
-.parish-figures-container div:nth-child(2) h5 p {
-	margin-left: 5%;
+
+.family-number-caption {
+	transform: translate(717%, -550%);
 }
+
+.worship-groups-caption {
+    transform: translate(432%, -550%);
+}
+
 
 /*footer*/
 
@@ -308,8 +342,9 @@ footer .about-us button {
 }
 
 footer .about-us button:hover {
-	background-color: #274747;
-	border: none;
+	background-color: #DBD9D9;
+	border-color: #DBD9D9;
+	color: #274747;
 }
 
 footer .about-us .modal button {
@@ -378,23 +413,44 @@ footer div[class*="service"] h5 {
 
 footer .footer-bottom {
 	background-color: #274747;
-	padding: 20px 0;
+	padding: 0;
+}
+
+.footer-bottom .made-by {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
 }
 
 footer .footer-bottom i, footer .footer-bottom i a {
 	color: #DBD9D9;
 	text-decoration: none;
 	padding: 10px;
+	font-size: 18px;
+
 }
 
-footer .footer-bottom i a:hover, footer .footer-bottom .to-the-top a:hover, footer .footer-bottom i:hover {
+footer .footer-bottom a {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+footer .footer-bottom i a:hover {
 	font-weight: bold;
 	color: #DBD9D9;
 	text-decoration: none;
 }
 
-footer .footer-bottom .fa-copyright {
-	float: right;
+
+
+footer .footer-bottom a i {
+	font-size: 60px;
+	position: fixed;
+	bottom: 20px;
+	right: 50px;
+	color: darkred;
+	z-index: 99;
+	cursor: pointer;
+	display: none;
 }
 
 footer .footer-bottom .to-the-top a {
@@ -403,6 +459,13 @@ footer .footer-bottom .to-the-top a {
 	text-decoration: none;
 }
 
+.bottom-fixed {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
 /*INTENCJE*/
 
 .white-stripe {
@@ -410,10 +473,6 @@ footer .footer-bottom .to-the-top a {
 	width: 100%;
 	height: 100px;
 	margin-top: 98px;
-}
-
-.service-times {
-	
 }
 
 .service-times h3 {
@@ -429,7 +488,7 @@ footer .footer-bottom .to-the-top a {
 }
 
 nav-tabs .nav-item {
-	padding: 0 1x;
+	padding: 0 1px;
 }
 
 .table-hover {
@@ -437,24 +496,33 @@ nav-tabs .nav-item {
 }
 
 .my-table-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	flex-wrap: nowrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
 	padding: 30px;
 }
 
 .table-image-container {
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	padding-right: 20px;
 }
 
 .table-responsive-sm {
-	flex: 6; 
+	-webkit-box-flex: 6;
+	    -ms-flex: 6;
+	        flex: 6; 
 }
 
 .table-image-container img {
 	width: 100%;
-	height: 90%;
+	height: 170px;
 	border-radius: 10px;
 }
 
@@ -486,15 +554,24 @@ nav-tabs .nav-item {
 .my-container {
 	margin: 0 auto;
 	width: 70%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .my-container .list-group {
 	margin-top: 50px;
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	margin-right: 30px;
 }
 
@@ -504,7 +581,9 @@ nav-tabs .nav-item {
 }
 
 .my-container .scrollspy-example {
-	flex: 4;
+	-webkit-box-flex: 4;
+	    -ms-flex: 4;
+	        flex: 4;
 	position: relative;
 	height: 450px;
 	overflow-y: scroll;
@@ -528,8 +607,10 @@ nav-tabs .nav-item {
 }
 
 .statistics-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: ;
+
 	width: 100%;
 	height: 300px;
 	border-bottom: 1px solid #fff;
@@ -543,23 +624,14 @@ nav-tabs .nav-item {
 	background-color: #e74c3c;
 	margin-left: 8%;
 	margin-top: 31%;
-	transition-duration: 5s;
+	-webkit-transition-duration: 5s;
+	     -o-transition-duration: 5s;
+	        transition-duration: 5s;
 	color: #dbd9d9;
 	text-align: center;
 	padding-top: 10px;
 }
 
-.statistics-container div:first-of-child {
-	transition-property: margin-top, background;
-}
-
-.statistics-container div:nth-of-child(2) {
-	transition-property: margin-top, background;
-}
-
-.statistics-container div:last-of-child {
-	transition-property: margin-top, background;
-}
 
 .statistics-container:hover > .one {
 	background-color: green;
@@ -571,14 +643,18 @@ nav-tabs .nav-item {
 	background-color: yellow;
 	margin-top: 2%;
 	height: 280px;
-	transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	     -o-transition-delay: 1s;
+	        transition-delay: 1s;
 }
 
 .statistics-container:hover > .three {
 	background-color: blue;
 	margin-top: 4%;
 	height: 263px;
-	transition-delay: 2s;
+	-webkit-transition-delay: 2s;
+	     -o-transition-delay: 2s;
+	        transition-delay: 2s;
 }
 
 .statistics-years span {
@@ -605,9 +681,11 @@ nav-tabs .nav-item {
 
 	/*updates*/
 	.hover-style {
-	transform: perspective(1000px) rotateY(30deg);
+	-webkit-transform: perspective(1000px) rotateY(30deg);
+	        transform: perspective(1000px) rotateY(30deg);
 	border: 2px solid grey;
-	box-shadow: 10px 10px 10px grey;
+	-webkit-box-shadow: 10px 10px 10px grey;
+	        box-shadow: 10px 10px 10px grey;
 	}
 	.updates-board p, .updates-board h4 {
 		font-size: 15px;
@@ -647,14 +725,14 @@ nav-tabs .nav-item {
 	}
 	.nested div:first-child{
 		font-size: 12px;
-		padding:: 0 50px;
+		padding: 10px 50px;
 	}
 	.nested div:last-child {
-	padding: 0 2px 0;
+	padding: 10px 2px 0;
 	font-size: 12px;
 	}
 	footer .address, footer .parish-office {
-		padding: 0 40px;
+		padding: 20px 40px;
 	}
 	footer div[class*="service"] {
 	padding: 30px;
@@ -664,6 +742,17 @@ nav-tabs .nav-item {
 	}
 	footer .col p {
 		font-size: 11px;
+	}
+	footer .footer-bottom {
+	background-color: #274747;
+	padding: 0;
+	}
+	.footer-bottom .made-by {
+		padding: 7px;
+	}
+	footer .footer-bottom i, footer .footer-bottom i a {
+		padding: 7px;
+		font-size: 16px;
 	}
 	
 	/*priest-carousel*/
@@ -692,28 +781,36 @@ nav-tabs .nav-item {
 	/*section parish-figures*/
 
 	.parish-figures{
-		height: 200px;
-	}
-	.parish-figures-container {
-		height: 200px;
-	}
-	.parish-figures .container div {
-		padding-left: 10px;
-	}
-	.parish-figures-container div h5 {
-		font-size: 25px;
-	}
-	.parish-figures-container div p {
-		font-size: 10px;
-		font-weight: bold;
-	}
-	.parish-figures-container div:last-child h5 p {
-		color: #fff;
-		margin-left: -35%;
-	}
-	.parish-figures-container div:nth-child(2) h5 p {
-		margin-left: 5%;
-	}
+	position: relative;
+	background-image: url(../images/1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 250px;
+}
+.parish-figures-container {
+	height: 250px;
+}
+.parish-figures-container div > h5 {
+	font-size: 30px;
+}
+.number-caption {
+	font-size: 10px;
+	font-weight: bold;
+	color: darkred;
+}
+
+.area-number-caption {
+	transform: translate(0%, -670%);
+}
+
+.family-number-caption {
+	transform: translate(530%, -670%);
+}
+
+.worship-groups-caption {
+    transform: translate(282%, -670%);
+}
+	
 
 	/*INTENCJE*/
 	.white-stripe {
