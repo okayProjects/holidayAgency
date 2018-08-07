@@ -172,8 +172,6 @@ body {
 	        box-shadow: 10px 10px 10px grey;
 }
 
-
-
 .updates-board p, .updates-board h4 {
 	font-size: 18px;
 	color: #000;
@@ -186,17 +184,20 @@ body {
 	margin: 20px 0 20px 80px;
 }
 
-.updates-board-container div > p i {
-	font-size: 50px;
-	color: grey;
-}
-
 .hover-style i {
 	font-size: 40px;
-	color: darkred;
+	color: orange;
 	margin: 20px 150px 0;
 	    -webkit-transform: perspective(100px) rotateY(29deg) rotateX(-41deg);
 	            transform: perspective(100px) rotateY(29deg) rotateX(-41deg);
+}
+
+.updates-board-container div:nth-child(2) i {
+	color: green;
+}
+
+.updates-board-container div:nth-child(3) i {
+	color: yellow;
 }
 
 /*priest-carousel*/
@@ -272,7 +273,7 @@ body {
 
 .parish-figures-container div > h5 {
 	font-size: 50px;
-	color: darkdarkred;
+	color: darkred;
 	font-weight: bold;
 }
 
@@ -351,11 +352,13 @@ footer .about-us .modal button {
 	color: #DBD9D9;
 	font-size: 20px;
 	border: none;
+	transition: transform 3s;
 }
 
 footer .about-us .modal button:hover {
 	text-decoration: none;
-	color: #fff;
+	transform: translateX(30px);
+	background-color: initial;
 }
 
 .nested > div {
@@ -427,7 +430,6 @@ footer .footer-bottom i, footer .footer-bottom i a {
 	text-decoration: none;
 	padding: 10px;
 	font-size: 18px;
-
 }
 
 footer .footer-bottom a {
@@ -437,10 +439,7 @@ footer .footer-bottom a {
 footer .footer-bottom i a:hover {
 	font-weight: bold;
 	color: #DBD9D9;
-	text-decoration: none;
 }
-
-
 
 footer .footer-bottom a i {
 	font-size: 60px;
@@ -451,12 +450,6 @@ footer .footer-bottom a i {
 	z-index: 99;
 	cursor: pointer;
 	display: none;
-}
-
-footer .footer-bottom .to-the-top a {
-	font-weight: normal;
-	color: #DBD9D9;
-	text-decoration: none;
 }
 
 .bottom-fixed {
@@ -680,21 +673,18 @@ nav-tabs .nav-item {
 	}
 
 	/*updates*/
-	.hover-style {
-	-webkit-transform: perspective(1000px) rotateY(30deg);
-	        transform: perspective(1000px) rotateY(30deg);
-	border: 2px solid grey;
-	-webkit-box-shadow: 10px 10px 10px grey;
-	        box-shadow: 10px 10px 10px grey;
+	.updates-board {
+		margin: 0;
+		padding: 20px 0 0;
+		height: 550px;
 	}
 	.updates-board p, .updates-board h4 {
-		font-size: 15px;
+		font-size: 13px;
 		padding: 20px 10px;
 	}
-
 	.updates-board ul > li {
 		font-size: 15px;
-		margin: 0 20px 10px;
+		margin: 10px 0;
 		padding: 0;	
 	}
 	footer div[class*="service"] h3 {
@@ -743,17 +733,19 @@ nav-tabs .nav-item {
 	footer .col p {
 		font-size: 11px;
 	}
-	footer .footer-bottom {
-	background-color: #274747;
-	padding: 0;
-	}
 	.footer-bottom .made-by {
-		padding: 7px;
+		padding: 10px;
 	}
 	footer .footer-bottom i, footer .footer-bottom i a {
 		padding: 7px;
 		font-size: 16px;
 	}
+	footer .footer-bottom a i {
+	font-size: 40px;
+	position: fixed;
+	bottom: 10px;
+	right: 5px;
+}
 	
 	/*priest-carousel*/
 
@@ -781,35 +773,32 @@ nav-tabs .nav-item {
 	/*section parish-figures*/
 
 	.parish-figures{
-	position: relative;
-	background-image: url(../images/1.jpg);
-	background-size: cover;
-	background-attachment: fixed;
 	height: 250px;
-}
-.parish-figures-container {
-	height: 250px;
-}
-.parish-figures-container div > h5 {
-	font-size: 30px;
-}
-.number-caption {
-	font-size: 10px;
-	font-weight: bold;
-	color: darkred;
-}
-
-.area-number-caption {
-	transform: translate(0%, -670%);
-}
-
-.family-number-caption {
-	transform: translate(530%, -670%);
-}
-
-.worship-groups-caption {
-    transform: translate(282%, -670%);
-}
+	}
+	.parish-figures-container {
+		height: 250px;
+	}
+	.parish-figures-container div > h5 {
+		font-size: 30px;
+	}
+	.number-caption {
+		font-size: 10px;
+		font-weight: bold;
+		color: darkred;
+	}
+	.area-number-caption {
+		transform: translate(-10%, -600%);
+	}
+	.family-number-caption {
+		transform: translate(440%, -600%);
+	}
+	.worship-groups-caption {
+	    transform: translate(217%, -600%);
+	}
+	.parish-figures .number-caption {
+		color: white;
+		font-size: 12px;
+	}
 	
 
 	/*INTENCJE*/

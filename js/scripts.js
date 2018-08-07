@@ -6,19 +6,13 @@ $(window).scroll(function() {
   $("nav").addClass('navbar-scroll');
 });
 
-
-$('.wierusz-inner').hover(function() {
-	$('.wierusz-center').fadeIn();
-	}, function() {
-	$('.wierusz-center').fadeOut();
-});
-
-
-$('.tomaszewski-inner').hover(function() {
-	$('.tomaszewski-center').fadeIn();
-    }, function() {
-    	$('.tomaszewski-center').fadeOut();
-});
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 600) {
+      $("#to-the-top").css('display', 'block');
+    } else {
+      $("#to-the-top").css('display', 'none');
+    }
+  });
 
 
 $('.current-updates-one').hover(function() {
@@ -57,44 +51,51 @@ $('.current-updates-three').hover(function() {
 		$('.current-updates-three i').css('display', 'block');
 })
 
+$('.wierusz-inner').hover(function() {
+	$('.wierusz-center').fadeIn();
+	}, function() {
+	$('.wierusz-center').fadeOut();
+});
+
+
+$('.tomaszewski-inner').hover(function() {
+	$('.tomaszewski-center').fadeIn();
+    }, function() {
+    	$('.tomaszewski-center').fadeOut();
+});
+
 $(window).scroll(function() {
-    if ($(document).scrollTop() > 600) {
-      $("#to-the-top").css('display', 'block');
-    } else {
-      $("#to-the-top").css('display', 'none');
-    }
-  });
-
-
-
-
-$(function(){
-  var step = 1;
-  var timeInterval = 10;
-  function count(numberContainer){
-    var optionalNumber = 100;
-    var currentNumberElement = numberContainer.find('h5');
-    var finalNumber = Number( numberContainer.data('final-number') || optionalNumber);
-    function incrementNumber(){
-       var currentNumberValue = Number(currentNumberElement.text());
-       var newNumber = currentNumberValue + step;
-       currentNumberElement.text(newNumber);
-       if(newNumber < finalNumber){
-          setTimeout(function(){
-            incrementNumber();
-          }, timeInterval);
-       }else{
-         console.log('koniec liczenia');
-         //currentNumberElement.css('color', 'red');
-       }
-    } 
-    setTimeout(incrementNumber, timeInterval)
-  } 
-  var numbers = $('.number');
-  numbers.each(function(index, element){
-    count( $(element) );
-  }); 
+  if ($(document).scrollTop() > 1800) {
+    $(function(){
+      var step = 1;
+      var timeInterval = 10;
+      function count(numberContainer){
+        var optionalNumber = 100;
+        var currentNumberElement = numberContainer.find('h5');
+        var finalNumber = Number( numberContainer.data('final-number') || optionalNumber);
+        function incrementNumber(){
+           var currentNumberValue = Number(currentNumberElement.text());
+           var newNumber = currentNumberValue + step;
+           currentNumberElement.text(newNumber);
+           if(newNumber < finalNumber){
+              setTimeout(function(){
+                incrementNumber();
+              }, timeInterval);
+           }else{
+             //currentNumberElement.css('color', 'red');
+           }
+        } 
+        setTimeout(incrementNumber, timeInterval)
+      } 
+      var numbers = $('.number');
+      numbers.each(function(index, element){
+        count( $(element) );
+      }); 
+      $(window).unbind('scroll');
+    })
+  }
 })
+
 
 
 /*
