@@ -1,414 +1,556 @@
 <!DOCTYPE html>
-	<html>
-		<head>    
-	      <meta charset="utf-8">
-	      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700i&effect=destruction|crackle" rel="stylesheet">
-	      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-	      <link rel="stylesheet" type="text/css" href="css/style.css">
-	      <title>Parafia Złoczew</title>
-		</head>
-		<body class="body-with-background-color">
-      	<nav class="navbar navbar-expand-lg fixed-top">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/brand-st-andrew.png" alt="St.Andrew">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <span class="navbar-toggler-icon"></span>
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="intencje.html">Intencje mszalne <span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="sakramenty.html">Sakramenty<span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700i&effect=destruction|crackle" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	    crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+	    crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Parafia Złoczew</title>
+</head>
+
+<body class="body-with-background-color">
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/brand-st-andrew.png" alt="St.Andrew">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+			    aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="intencje.html">Intencje mszalne <span class="sr-only"></span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="sakramenty.html">Sakramenty<span class="sr-only"></span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+						    aria-expanded="false">
                     Zespoły parafialne
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+						    aria-expanded="false">
                     Zespoły muzyczne
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-              </ul>
-            </div>  
-          </div> 
-        </nav>
-	      <div class="white-stripe" id="up"></div>
-	      <div class="my-container">
-	  		<div id="list-example" class="list-group">
-				<a class="list-group-item list-group-item-action" href="#list-item-1">Chrzest</a>
-				<a class="list-group-item list-group-item-action" href="#list-item-2">Pierwsza Komunia Święta</a>
-				<a class="list-group-item list-group-item-action" href="#list-item-3">Bierzmowanie</a>
-				<a class="list-group-item list-group-item-action" href="#list-item-4">Małżeństwo</a>
-				<a class="list-group-item list-group-item-action" href="#list-item-5">Pokuta</a>
-				<a class="list-group-item list-group-item-action" href="#list-item-6">Sakrament Chorych</a>
-				<a class="list-group-item list-group-item-action" href="#list-item-7">Pogrzeb</a>
-	  		</div>
-		  	<div data-spy="scroll" data-target="#list-example" data-offset="50" class="scrollspy-example">
-	    		<h4 id="list-item-1">Chrzest</h4>
-			 	<p>Chrzest jest najpiękniejszym i najwspanialszym darem Boga. Nazywamy go darem, łaską, namaszczeniem, oświeceniem, szatą niezniszczalności, obmyciem odradzającym, pieczęcią i wszystkim, co może być najcenniejsze. Darem - ponieważ jest udzielany tym, którzy nic nie przynoszą; łaską - ponieważ jest dawany nawet tym, którzy zawinili; chrztem - ponieważ grzech zostaje pogrzebany w wodzie; namaszczeniem - ponieważ jest święty i królewski (a królów się namaszcza); oświeceniem - ponieważ jest jaśniejącym światłem; szatą - ponieważ zakrywa nasz wstyd; obmyciem - ponieważ oczyszcza; pieczęcią - ponieważ strzeże nas i jest znakiem panowania Boga. <br>Chrzest święty jest fundamentem całego życia chrześcijańskiego, bramą życia w Duchu (vitae spiritualis ianua) i bramą otwierającą dostęp do innych sakramentów. Przez chrzest zostajemy wyzwoleni od grzechu i odrodzeni jako synowie Boży, stajemy się członkami Chrystusa oraz zostajemy wszczepieni w Kościół i stajemy się uczestnikami jego posłania: "Chrzest jest sakramentem odrodzenia przez wodę i w słowie". <br>Sakrament ten jest nazywany chrztem ze względu na główny obrzęd, przez który jest wypełniany: chrzcić (gr. baptizein) oznacza: "zanurzyć, pogrążyć"; "zanurzenie" w wodzie jest symbolem pogrzebania katechumena w śmierci Chrystusa, z której powstaje przez zmartwychwstanie z Nim jako "nowe stworzenie" (2 Kor 5,17; Ga 6,15).<br> Sakrament ten jest także nazywany "obmyciem odradzającym i odnawiającym w Duchu Świętym" (Tt 3, 5), ponieważ oznacza i urzeczywistnia narodzenie z wody i z Ducha, bez którego nikt "nie może wejść do Królestwa Bożego" (J 3, 5).<br> "Obmycie to nazywane jest oświeceniem, ponieważ ci, którzy otrzymują pouczenie (katechetyczne), zostają oświeceni w duchu..." 7 Ochrzczony, otrzymawszy w chrzcie Słowo, "światłość prawdziwą, która oświeca każdego człowieka" (J 1, 9), "po oświeceniu" (Hbr 10, 32) staje się "synem światłości" (1 Tes 5, 5) i samą "światłością" (Ef 5, 8).<br><br> Żródło: Katechizm Kościoła Katolickiego, Dział drugi, Rozdział pierwszy, Artykuł I: Sakrament chrztu.</p>
-			 	<h5>Liczba ochrzczonych</h5>
-			 	<div class="statistics-container">
-			 		<div class='one'>36</div>
-			 		<div class='two'>52</div>
-			 		<div class='three'>48</div>		
-			 	</div>
-			 	<div class="statistics-years">
-			 		<span>2016</span>
-				 	<span>2017</span>
-				 	<span>2018</span>
-			 	</div>
-				<h4 id="list-item-2">Pierwsza Komunia Święta</h4>
-				<p>Najświętsza Eucharystia dopełnia wtajemniczenie chrześcijańskie. Ci, którzy przez chrzest zostali wyniesieni do godności królewskiego kapłaństwa, a przez bierzmowanie zostali głębiej upodobnieni do Chrystusa, za pośrednictwem Eucharystii uczestniczą razem z całą wspólnotą w ofierze Pana."Zbawiciel nasz podczas Ostatniej Wieczerzy, tej nocy, kiedy został wydany, ustanowił eucharystyczną Ofiarę Ciała i Krwi swojej, aby w niej na całe wieki, aż do swego przyjścia, utrwalić Ofiarę Krzyża i tak umiłowanej Oblubienicy - Kościołowi powierzyć pamiątkę swej Męki i Zmartwychwstania: sakrament miłosierdzia, znak jedności, węzeł miłości, ucztę paschalną, w której pożywamy Chrystusa, w której dusza napełnia się łaską i otrzymuje zadatek przyszłej chwały"."Eucharystia oznacza i urzeczywistnia komunię życia z Bogiem i jedność Ludu Bożego, przez które Kościół jest sobą. Jest ona szczytem działania, przez które Bóg w Chrystusie uświęca świat, a równocześnie szczytem kultu, jaki ludzie w Duchu Świętym oddają Chrystusowi, a przez Niego Ojcu".W końcu, przez celebrację Eucharystii jednoczymy się już teraz z liturgią niebieską i uprzedzamy życie wieczne, gdy Bóg będzie wszystkim we wszystkich.Eucharystia jest więc streszczeniem i podsumowaniem całej naszej wiary. "Nasz sposób myślenia zgadza się z Eucharystią, a Eucharystia ze swej strony potwierdza nasz sposób myślenia. Eucharystia jest "źródłem i zarazem szczytem całego życia chrześcijańskiego". "Inne zaś sakramenty, tak jak wszystkie kościelne posługi i dzieła apostolstwa, wiążą się ze świętą Eucharystią i do niej zmierzają. W Najświętszej bowiem Eucharystii zawiera się całe duchowe dobro Kościoła, a mianowicie sam Chrystus, nasza Pascha".<br><br>Żródło: Katechizm Kościoła Katolickiego, Dział drugi, Rozdział pierwszy, Artykuł III: Sakrament Eucharystii.</p>
-				<h5>Liczba dzieci, które przystąpiły do Pierwszej Komunii Świętej</h5>
-			 	<div class="statistics-container">
-			 		<div class='one'>36</div>
-			 		<div class='two'>52</div>
-			 		<div class='three'>48</div>		
-			 	</div>
-			 	<div class="statistics-years">
-			 		<span>2016</span>
-				 	<span>2017</span>
-				 	<span>2018</span>
-			 	</div>
-				<h4 id="list-item-3">Bierzmowanie</h4>
-				<p>Sakrament bierzmowania wraz z chrztem i Eucharystią należy do "sakramentów wtajemniczenia chrześcijańskiego", którego jedność powinna być zachowywana. Należy zatem wyjaśniać wiernym, że przyjęcie tego sakramentu jest konieczne jako dopełnienie łaski chrztu. Istotnie, "przez sakrament bierzmowania (ochrzczeni) jeszcze ściślej wiążą się z Kościołem, otrzymują szczególną moc Ducha Świętego i w ten sposób jeszcze mocniej zobowiązani są, jako prawdziwi świadkowie Chrystusa, do szerzenia wiary słowem i uczynkiem oraz do bronienia jej". W Starym Testamencie prorocy zapowiadali, że Duch Pana spocznie na oczekiwanym Mesjaszu ze względu na Jego zbawcze posłanie. Zstąpienie Ducha Świętego na Jezusa, kiedy Jan udzielał Mu chrztu, było znakiem, że jest On tym, który miał przyjść, że jest Mesjaszem, Synem Bożym. Jezus poczęty za sprawą Ducha Świętego urzeczywistnia całe swoje życie i całe swoje posłanie w pełnej jedności z Duchem Świętym, którego Ojciec daje Mu "z niezmierzonej obfitości" (J 3, 34). Ta pełnia Ducha nie miała pozostać jedynie udziałem Mesjasza, ale miała być udzielona całemu ludowi mesjańskiemu. Chrystus wielokrotnie obiecywał wylanie Ducha. Spełnił najpierw tę swoją obietnicę w dniu Paschy, a następnie w sposób bardziej zdumiewający w dniu Pięćdziesiątnicy. Apostołowie napełnieni Duchem Świętym zaczynają głosić "wielkie dzieła Boże" (Dz 2, 11), a Piotr oznajmia, że to wylanie Ducha jest znakiem czasów mesjańskich. Ci, którzy wówczas uwierzyli słowom Apostołów i pozwolili się ochrzcić, otrzymali z kolei dar Ducha Świętego. "Od tego czasu Apostołowie, wypełniając wolę Chrystusa, przez wkładanie rąk udzielali neofitom daru Ducha Świętego, który uzupełniał łaskę chrztu. Dlatego w Liście do Hebrajczyków wśród pierwszych elementów formacji chrześcijańskiej wymienia się naukę o chrzcie i wkładaniu rąk. To wkładanie rąk w tradycji katolickiej słusznie uznaje się za początek sakramentu bierzmowania, który w pewien sposób przedłuża w Kościele łaskę Pięćdziesiątnicy".<br><br>Żródło: Katechizm Kościoła Katolickiego, Dział drugi, Rozdział pierwszy, Artykuł II: Sakrament bierzmowania.</p>
-				<h5>Liczba osób, które przystąpiły do sakramentu bierzmowania</h5>
-			 	<div class="statistics-container">
-			 		<div class='one'>36</div>
-			 		<div class='two'>52</div>
-			 		<div class='three'>48</div>		
-			 	</div>
-			 	<div class="statistics-years">
-			 		<span>2016</span>
-				 	<span>2017</span>
-				 	<span>2018</span>
-			 	</div>
-				<h4 id="list-item-4">Małżeństwo</h4>
-				<p>"Przymierze małżeńskie, przez które mężczyzna i kobieta tworzą ze sobą wspólnotę całego życia, skierowaną ze swej natury na dobro małżonków oraz do zrodzenia i wychowania potomstwa, zostało między ochrzczonymi podniesione przez Chrystusa Pana do godności sakramentu". Pismo święte zaczyna się od opisu stworzenia mężczyzny i kobiety na obraz i podobieństwo Boże, a kończy wizją "Godów Baranka" (Ap 19, 7. 9). Od początku do końca Pismo święte mówi o małżeństwie i jego "misterium", o jego ustanowieniu i znaczeniu, jakie nadał mu Bóg, o jego początku i celu, o różnych sposobach jego urzeczywistniania w ciągu historii zbawienia, o jego trudnościach wynikających z grzechu i jego odnowieniu "w Panu" (1 Kor 7, 39), w Nowym Przymierzu Chrystusa i Kościoła. W obrządku łacińskim małżeństwo między dwojgiem wierzących katolików jest zazwyczaj zawierane podczas Mszy świętej, ze względu na związek wszystkich sakramentów z Misterium Paschalnym Chrystusa. W Eucharystii urzeczywistnia się pamiątka Nowego Przymierza, przez które Chrystus na zawsze zjednoczył się z Kościołem, swoją umiłowaną Oblubienicą, za którą wydał samego siebie. Słuszne jest zatem, by małżonkowie przypieczętowali swoją zgodę na wzajemne oddanie się sobie przez dar własnego życia, jednocząc się z ofiarą Chrystusa za Kościół, uobecnioną w Ofierze eucharystycznej, i przyjmując Eucharystię, ażeby skoro spożywają to samo Ciało i tę samą Krew Chrystusa, "tworzyli jedno ciało" w Chrystusie. "Obrzęd zaślubin jako sakramentalny akt uświęcenia... winien być sam w sobie ważny, godny i owocny". Przyszli małżonkowie powinni więc przygotować się do celebracji swych zaślubin przez przyjęcie sakramentu pokuty.<br><br>Żródło: Katechizm Kościoła Katolickiego, Dział drugi, Rozdział trzeci, Artykuł VII: Sakrament małżeństwa.</p>
-				<h5>Liczba zawartych związków małrzeńskich</h5>
-			 	<div class="statistics-container">
-			 		<div class='one'>36</div>
-			 		<div class='two'>52</div>
-			 		<div class='three'>48</div>		
-			 	</div>
-			 	<div class="statistics-years">
-			 		<span>2016</span>
-				 	<span>2017</span>
-				 	<span>2018</span>
-			 	</div>
-				<h4 id="list-item-5">Pokuta</h4>
-				<p>„Weźmijcie Ducha Świętego! Którym grzechy odpuścicie, są im odpuszczone, a którym zatrzymacie, są im zatrzymane" (J 20, 22-23). Ci, którzy przystępują do sakramentu pokuty, otrzymują od miłosierdzia Bożego przebaczenie zniewagi wyrządzonej Bogu i równocześnie dostępują pojednania z Kościołem, któremu, grzesząc, zadali ranę, a który przyczynia się do ich nawrócenia miłością, przykładem i modlitwą. Nazywa się go sakramentem nawrócenia, ponieważ urzeczywistnia w sposób sakramentalny wezwanie Jezusa do nawrócenia, drogę powrotu do Ojca, od którego człowiek oddalił się przez grzech. Nazywa się go sakramentem pokuty, ponieważ ukazuje osobistą i eklezjalną drogę nawrócenia, skruchy i zadośćuczynienia ze strony grzesznego chrześcijanina. Nazywa się go sakramentem spowiedzi, ponieważ oskarżenie - spowiedź z grzechów przed kapłanem jest istotnym elementem tego sakramentu. Sakrament ten jest również „wyznaniem", uznaniem i uwielbieniem świętości Boga oraz Jego miłosierdzia wobec grzesznego człowieka. Nazywa się go sakramentem przebaczenia, ponieważ przez sakramentalne rozgrzeszenie wypowiedziane słowami kapłana Bóg udziela penitentowi „przebaczenia i pokoju". Nazywa się go sakramentem pojednania, ponieważ udziela grzesznikowi miłości Boga przynoszącej pojednanie: „Pojednajcie się z Bogiem" (II Kor 5, 20). Ten, kto żyje miłosierną miłością Boga, jest gotowy odpowiedzieć na wezwanie Pana: „Najpierw idź i pojednaj się z bratem swoim" (Mt 5, 24). Grzech jest przede wszystkim obrazą Boga, zerwaniem jedności z Nim. Narusza on równocześnie komunię z Kościołem. Dlatego też nawrócenie przynosi przebaczenie ze strony Boga, a także pojednanie z Kościołem, co wyraża i urzeczywistnia w sposób liturgiczny sakrament pokuty i pojednania. Chrystus ustanowił sakrament pokuty dla wszystkich grzeszników w Kościele, a przede wszystkim dla tych, którzy po chrzcie popełnili grzech ciężki i w ten sposób utracili łaskę chrztu oraz zadali ranę komunii kościelnej. Sakrament pokuty daje im nową możliwość nawrócenia się i odzyskania łaski usprawiedliwienia.<br><br>Żródło: Katechizm Kościoła Katolickiego</p>
-				<h5>Liczba wyspowiadanych</h5>
-			 	<div class="statistics-container">
-			 		<div class='one'>36</div>
-			 		<div class='two'>52</div>
-			 		<div class='three'>48</div>		
-			 	</div>
-			 	<div class="statistics-years">
-			 		<span>2016</span>
-				 	<span>2017</span>
-				 	<span>2018</span>
-			 	</div>
-				<h4 id="list-item-6">Namaszczenie chorych</h4>
-				<p>"Przez święte chorych namaszczenie i modlitwę kapłanów cały Kościół poleca chorych cierpiącemu i uwielbionemu Panu, aby ich podźwignął i zbawił; a nadto zachęca ich, aby łącząc się dobrowolnie z męką i śmiercią Chrystusa, przysparzali dobra Ludowi Bożemu". Namaszczenie chorych "nie jest sakramentem przeznaczonym tylko dla tych, którzy znajdują się w ostatecznym niebezpieczeństwie utraty życia. Odpowiednia zatem pora na przyjęcie tego sakramentu jest już wówczas, gdy wiernym zaczyna grozić niebezpieczeństwo śmierci z powodu choroby lub starości". Jeśli chory, który został namaszczony, odzyskał zdrowie, w przypadku nowej ciężkiej choroby może ponownie przyjąć ten sakrament. W ciągu tej samej choroby namaszczenie chorych może być udzielone powtórnie, jeśli choroba się pogłębia. Jest rzeczą stosowną przyjąć sakrament namaszczenia chorych przed trudną operacją. Odnosi się to także do osób starszych, u których pogłębia się słabość.<br><br>Żródło: Katechizm Kościoła Katolickiego, Dział drugi, Rozdział drugi, Artykuł V: Namaszczenie chorych.</p>
-				<h5>Liczba osób, którym udzielono ostatniego namaszczenia</h5>
-			 	<div class="statistics-container">
-			 		<div class='one'>36</div>
-			 		<div class='two'>52</div>
-			 		<div class='three'>48</div>		
-			 	</div>
-			 	<div class="statistics-years">
-			 		<span>2016</span>
-				 	<span>2017</span>
-				 	<span>2018</span>
-			 	</div>
-				<h4 id="list-item-7">Pogrzeb</h4>
-				<p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis </p>
-				<h5>Liczba osób, które odeszły z naszej wspólnoty</h5>
-			 	<div class="statistics-container">
-			 		<div class='one'>36</div>
-			 		<div class='two'>52</div>
-			 		<div class='three'>48</div>		
-			 	</div>
-			 	<div class="statistics-years">
-			 		<span>2016</span>
-				 	<span>2017</span>
-				 	<span>2018</span>
-			 	</div>
-		  	</div> 	
-	      </div>
-	      <div class="white-stripe" id="top-of-the-page"></div>  
-	      <footer>
-	        <div class="container footer-top">
-	          <div class="row">
-	            <div class="col about-us">
-	              <h4>O parafii</h4>
-	              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis error magnam dolor numquam provident cupiditate laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis error magnam dolor numquam provident cupiditate laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis error magnam dolor numquam provident cupiditate laudantium</p>
-	              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Historia parafii</button>
-	              <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-	                <div class="modal-dialog modal-lg">
-	                  <div class="modal-content">
-	                    <div class="accordion" id="accordionExample">
-	                      <div class="card">
-	                        <div class="card-header" id="headingOne">
-	                          <h5 class="mb-0">
-	                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-	                              Wiek XVII - lata 1600 - 1611
-	                            </button>
-	                          </h5>
-	                        </div>
-	                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-	                          <div class="card-body">
-	                            1600 – fundacja Andrzeja Ruszkowskiego na rzecz parafii<br>
-	                            1601 - erygowanie parafii<br>
-	                            1603 – ukończenie budowy kościoła, objęcie nowej parafii przez ks. J. Szczerbica, proboszcza Unikowa<br>
-	                            1604 – zgoda administratora diecezji gnieźnieńskiej ks. S. Sarnowskiego na odprawianie nabożeństw<br>
-	                            1607 – konsekracja kościoła<br>
-	                            1608 – sprowadzenie oo. bernardynów do Złoczewa, ofiarowanie im kościoła<br>
-	                            1609 – 1611 – budowa drewnianego kościoła dla parafii
-	                          </div>
-	                        </div>
-	                      </div>
-	                      <div class="card">
-	                        <div class="card-header" id="headingTwo">
-	                          <h5 class="mb-0">
-	                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-	                              Wiek XVII - lata 1613 - 1690
-	                            </button>
-	                          </h5>
-	                        </div>
-	                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-	                          <div class="card-body">
-	                            1613 – 1617 – budowa kościoła murowanego dla parafii<br>
-	                            1619 – śmierć Andrzeja Ruszkowskiego<br>
-	                            1636 – znaczenie kościoła parafialnego znacznie osłabło, kościół sprawiał wrażenie opustoszałego<br>
-	                            1644 – do tego roku administratora pełnili proboszczowie Unikowa<br>
-	                            1644 – 1710 – proboszczami byli gwardianie oo. bernardynów<br>
-	                            1648 – wizyta w kościele Mikołaja Ruszkowskiego, opata paradyskiego, syna fundatora<br>
-	                            1690 – założenie Bractwa Szkaplerza
-	                          </div>
-	                        </div>
-	                      </div>
-	                      <div class="card">
-	                        <div class="card-header" id="headingThree">
-	                          <h5 class="mb-0">
-	                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-	                              Wiek XVIII
-	                            </button>
-	                          </h5>
-	                        </div>
-	                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-	                          <div class="card-body">
-	                           1710 – proboszczem parafii został ks. Piotr Sienicki, gruntowny remont świątyni<br>
-	                           1722 – konsekracja kościoła parafialnego ok. 1728 – w ołtarzu głównym został umieszczony obraz św. Andrzeja, patrona parafii
-	                          </div>
-	                        </div>
-	                      </div>
-	                      <div class="card">
-	                        <div class="card-header" id="headingFour">
-	                          <h5 class="mb-0">
-	                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-	                              Wiek XIX
-	                            </button>
-	                          </h5>
-	                        </div>
-	                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-	                          <div class="card-body">
-	                            1818 – włączenie Złoczewa do diecezji kujawsko – kaliskiej (włocławskiej)<br>
-	                            1856 – z powodu złego stanu ówczesny burmistrz postulował o zamknięcie kościoła<br>
-	                            1875 – ukończenie remontów
-	                          </div>
-	                        </div>
-	                      </div>
-	                      <div class="card">
-	                        <div class="card-header" id="headingFive">
-	                          <h5 class="mb-0">
-	                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-	                              Wiek XX - lata 1907 - 1946
-	                            </button>
-	                          </h5>
-	                        </div>
-	                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-	                          <div class="card-body">
-	                            1907 – od strony południowej dobudowano do świątyni zakrystię<br>
-	                            1939 – zamknięcie plebanii, wywiezienie ks. Władysława Ulatowskiego, proboszcza parafii złoczewskiej<br>
-	                            1941 – zamknięcie kościoła parafialnego, wywiezienie ks. Antoniego Owczarka do obozu zagłady w Dachau<br>
-	                            1945 – powrót księży do parafii<br>
-	                            1946 – gruntowny remont wieży
-	                          </div>
-	                        </div>
-	                      </div>
-	                      <div class="card">
-	                        <div class="card-header" id="headingSix">
-	                          <h5 class="mb-0">
-	                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-	                              Wiek XX - lata 1975 - 1995
-	                            </button>
-	                          </h5>
-	                        </div>
-	                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-	                          <div class="card-body">
-	                            1975 – nawiedzenie parafii przez kopię cudownego obrazu Matki Boskiej Częstochowskiej<br>
-	                            1984 – remont kościoła<br>
-	                            1989 – nawiedzenie parafii przez relikwie błogosławionej Urszuli Ledóchowskiej<br>
-	                            1995 – ukończenie i poświęcenie kaplicy cmentarnej
-	                          </div>
-	                        </div>
-	                      </div>
-	                      <div class="card">
-	                        <div class="card-header" id="headingSeven">
-	                          <h5 class="mb-0">
-	                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-	                              Wiek XXI
-	                            </button>
-	                          </h5>
-	                        </div>
-	                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-	                          <div class="card-body">
-	                            2000 – obchody 400-lecia istnienia parafii w Złoczewie<br>
-	                            2005 – wybudowanie i poświęcenie pomnika – popiersia Jana Pawła II<br>
-	                            2010 - nawiedzenie parafii przez kopię cudownego obrazu Matki Boskiej Częstochowskiej<br>
-	                            2011 - zakończenie remontu dachu kościoła
-	                          </div>
-	                        </div>
-	                      </div>
-	                    </div>
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
-	            <div class="col address">
-	              <h4>kontakt</h4>
-	              <div class="row nested">
-	                <div class="col-6">Adres:</div>
-	                <div class="col-6">ul. Kościelna 16 98-270 Złoczew Poland</div>
-	              </div>
-	              <div class="row nested">
-	                <div class="col-6">Telephonon:</div>
-	                <div class="col-6">+48 43 8202210</div>
-	              </div>
-	              <div class="row nested">
-	                <div class="col col-6">E-mail:</div>
-	                <div class="col col-6">success@gmail.com</div>
-	              </div>
-	              <div class="row nested">
-	                <div class="col col-6">Numer konta:</div>
-	                <div class="col col-6">87775646454564</div>
-	              </div>
-	            </div>
-	            <div class="col parish-office">
-	              <h4>kancelaria parafialna</h4>
-	              <div class="row nested">
-	                <div class="col col-6">Wtorek:</div>
-	                <div class="col col-6">16.00 - 17.00</div>
-	              </div>
-	              <div class="row nested">
-	                <div class="col col-6">Czwartek:</div>
-	                <div class="col col-6">16.00 - 17.00</div>
-	              </div>
-	              <div class="row nested">
-	                <div class="col col-6">Sobota:</div>
-	                <div class="col col-6">08.30 - 10.00</div>
-	              </div>              
-	            </div>
-	          </div>
-	        </div>
-	        <div class="container service-time-container">
-	          <div class="row">
-	            <div class="col service-time">   
-	              <h3>porządek mszy świętych</h3>
-	            </div>
-	          </div>
-	          <div class="row">
-	            <div class="col service-time-weekdays"> 
-	              <h5>Dni powszednie</h5>  
-	              <div class="service-hours-container ">
-	                <div class="row nested">
-	                  <div class="col col-6"><p>Klasztor</p></div>
-	                  <div class="col col-6"><p>07.00</p></div>
-	                </div>
-	                <div class="row nested">
-	                  <div class="col col-6"><p>Fara</p></div>
-	                  <div class="col col-6"><p>18.00</p></div>
-	                </div>
-	              </div>
-	            </div>
-	            <div class="col service-time-holidays"> 
-	              <h5>Niedziela i Święta</h5>  
-	              <div class="service-hours-container">
-	                <div class="row nested">
-	                  <div class="col col-6"><p>Klasztor</p></div>
-	                  <div class="col col-6"><p>07.00</p></div>
-	                </div>
-	                <div class="row nested">
-	                  <div class="col col-6"><p>Fara</p></div>
-	                  <div class="col col-6"><p>09.30</p></div>
-	                </div>
-	                <div class="row nested">
-	                  <div class="col col-6"><p>Fara</p></div>
-	                  <div class="col col-6"><p>10.00</p></div>
-	                </div>
-	                <div class="row nested">
-	                  <div class="col col-6"><p>Fara</p></div>
-	                  <div class="col col-6"><p>11.30</p></div>
-	                </div>
-	                <div class="row nested">
-	                  <div class="col col-6"><p>Fara</p></div>
-	                  <div class="col col-6"><p>18.00</p></div>
-	                </div>
-	              </div>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="footer-bottom">
-			  <div class="col made-by">
-			    <i class="far fa-copyright"><a href="#">Made by Kulek 2018</a></i>    
-			  </div>
-			  <a href="#up"><i id="to-the-top" class="fas fa-angle-double-up"></i></a>  
-	        </div>    
-	      </footer> 		
-			
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="white-stripe" id='up'></div>
+	<div class="my-container">
+		<div id="list-example" class="list-group">
+			<a class="list-group-item list-group-item-action" href="#list-item-1">Chrzest</a>
+			<a class="list-group-item list-group-item-action" href="#list-item-2">Pierwsza Komunia Święta</a>
+			<a class="list-group-item list-group-item-action" href="#list-item-3">Bierzmowanie</a>
+			<a class="list-group-item list-group-item-action" href="#list-item-4">Małżeństwo</a>
+			<a class="list-group-item list-group-item-action" href="#list-item-5">Pokuta</a>
+			<a class="list-group-item list-group-item-action" href="#list-item-6">Sakrament Chorych</a>
+			<a class="list-group-item list-group-item-action" href="#list-item-7">Pogrzeb</a>
+		</div>
+		<div data-spy="scroll" data-target="#list-example" data-offset="50" class="scrollspy-example">
+			<h4 id="list-item-1">Chrzest</h4>
+			<p>Chrzest jest najpiękniejszym i najwspanialszym darem Boga. Nazywamy go darem, łaską, namaszczeniem, oświeceniem, szatą
+				niezniszczalności, obmyciem odradzającym, pieczęcią i wszystkim, co może być najcenniejsze. Darem - ponieważ jest udzielany
+				tym, którzy nic nie przynoszą; łaską - ponieważ jest dawany nawet tym, którzy zawinili; chrztem - ponieważ grzech zostaje
+				pogrzebany w wodzie; namaszczeniem - ponieważ jest święty i królewski (a królów się namaszcza); oświeceniem - ponieważ
+				jest jaśniejącym światłem; szatą - ponieważ zakrywa nasz wstyd; obmyciem - ponieważ oczyszcza; pieczęcią - ponieważ strzeże
+				nas i jest znakiem panowania Boga.
+				<br>Chrzest święty jest fundamentem całego życia chrześcijańskiego, bramą życia w Duchu (vitae spiritualis ianua) i bramą
+				otwierającą dostęp do innych sakramentów. Przez chrzest zostajemy wyzwoleni od grzechu i odrodzeni jako synowie Boży,
+				stajemy się członkami Chrystusa oraz zostajemy wszczepieni w Kościół i stajemy się uczestnikami jego posłania: "Chrzest
+				jest sakramentem odrodzenia przez wodę i w słowie".
+				<br>Sakrament ten jest nazywany chrztem ze względu na główny obrzęd, przez który jest wypełniany: chrzcić (gr. baptizein)
+				oznacza: "zanurzyć, pogrążyć"; "zanurzenie" w wodzie jest symbolem pogrzebania katechumena w śmierci Chrystusa, z której
+				powstaje przez zmartwychwstanie z Nim jako "nowe stworzenie" (2 Kor 5,17; Ga 6,15).
+				<br> Sakrament ten jest także nazywany "obmyciem odradzającym i odnawiającym w Duchu Świętym" (Tt 3, 5), ponieważ oznacza
+				i urzeczywistnia narodzenie z wody i z Ducha, bez którego nikt "nie może wejść do Królestwa Bożego" (J 3, 5).
+				<br> "Obmycie to nazywane jest oświeceniem, ponieważ ci, którzy otrzymują pouczenie (katechetyczne), zostają oświeceni w
+				duchu..." 7 Ochrzczony, otrzymawszy w chrzcie Słowo, "światłość prawdziwą, która oświeca każdego człowieka" (J 1, 9),
+				"po oświeceniu" (Hbr 10, 32) staje się "synem światłości" (1 Tes 5, 5) i samą "światłością" (Ef 5, 8).
+				<br>
+				<br> Żródło: Katechizm Kościoła Katolickiego, Dział drugi, Rozdział pierwszy, Artykuł I: Sakrament chrztu.</p>
+			<h5>Liczba ochrzczonych</h5>
+			<div class="statistics-container">
+				<div class='one'>36</div>
+				<div class='two'>52</div>
+				<div class='three'>48</div>
+			</div>
+			<div class="statistics-years">
+				<span>2016</span>
+				<span>2017</span>
+				<span>2018</span>
+			</div>
+			<h4 id="list-item-2">Pierwsza Komunia Święta</h4>
+			<p>Najświętsza Eucharystia dopełnia wtajemniczenie chrześcijańskie. Ci, którzy przez chrzest zostali wyniesieni do godności
+				królewskiego kapłaństwa, a przez bierzmowanie zostali głębiej upodobnieni do Chrystusa, za pośrednictwem Eucharystii
+				uczestniczą razem z całą wspólnotą w ofierze Pana."Zbawiciel nasz podczas Ostatniej Wieczerzy, tej nocy, kiedy został
+				wydany, ustanowił eucharystyczną Ofiarę Ciała i Krwi swojej, aby w niej na całe wieki, aż do swego przyjścia, utrwalić
+				Ofiarę Krzyża i tak umiłowanej Oblubienicy - Kościołowi powierzyć pamiątkę swej Męki i Zmartwychwstania: sakrament miłosierdzia,
+				znak jedności, węzeł miłości, ucztę paschalną, w której pożywamy Chrystusa, w której dusza napełnia się łaską i otrzymuje
+				zadatek przyszłej chwały"."Eucharystia oznacza i urzeczywistnia komunię życia z Bogiem i jedność Ludu Bożego, przez które
+				Kościół jest sobą. Jest ona szczytem działania, przez które Bóg w Chrystusie uświęca świat, a równocześnie szczytem kultu,
+				jaki ludzie w Duchu Świętym oddają Chrystusowi, a przez Niego Ojcu".W końcu, przez celebrację Eucharystii jednoczymy
+				się już teraz z liturgią niebieską i uprzedzamy życie wieczne, gdy Bóg będzie wszystkim we wszystkich.Eucharystia jest
+				więc streszczeniem i podsumowaniem całej naszej wiary. "Nasz sposób myślenia zgadza się z Eucharystią, a Eucharystia
+				ze swej strony potwierdza nasz sposób myślenia. Eucharystia jest "źródłem i zarazem szczytem całego życia chrześcijańskiego".
+				"Inne zaś sakramenty, tak jak wszystkie kościelne posługi i dzieła apostolstwa, wiążą się ze świętą Eucharystią i do
+				niej zmierzają. W Najświętszej bowiem Eucharystii zawiera się całe duchowe dobro Kościoła, a mianowicie sam Chrystus,
+				nasza Pascha".
+				<br>
+				<br>Żródło: Katechizm Kościoła Katolickiego, Dział drugi, Rozdział pierwszy, Artykuł III: Sakrament Eucharystii.</p>
+			<h5>Liczba dzieci, które przystąpiły do Pierwszej Komunii Świętej</h5>
+			<div class="statistics-container">
+				<div class='one'>36</div>
+				<div class='two'>52</div>
+				<div class='three'>48</div>
+			</div>
+			<div class="statistics-years">
+				<span>2016</span>
+				<span>2017</span>
+				<span>2018</span>
+			</div>
+			<h4 id="list-item-3">Bierzmowanie</h4>
+			<p>Sakrament bierzmowania wraz z chrztem i Eucharystią należy do "sakramentów wtajemniczenia chrześcijańskiego", którego
+				jedność powinna być zachowywana. Należy zatem wyjaśniać wiernym, że przyjęcie tego sakramentu jest konieczne jako dopełnienie
+				łaski chrztu. Istotnie, "przez sakrament bierzmowania (ochrzczeni) jeszcze ściślej wiążą się z Kościołem, otrzymują szczególną
+				moc Ducha Świętego i w ten sposób jeszcze mocniej zobowiązani są, jako prawdziwi świadkowie Chrystusa, do szerzenia wiary
+				słowem i uczynkiem oraz do bronienia jej". W Starym Testamencie prorocy zapowiadali, że Duch Pana spocznie na oczekiwanym
+				Mesjaszu ze względu na Jego zbawcze posłanie. Zstąpienie Ducha Świętego na Jezusa, kiedy Jan udzielał Mu chrztu, było
+				znakiem, że jest On tym, który miał przyjść, że jest Mesjaszem, Synem Bożym. Jezus poczęty za sprawą Ducha Świętego urzeczywistnia
+				całe swoje życie i całe swoje posłanie w pełnej jedności z Duchem Świętym, którego Ojciec daje Mu "z niezmierzonej obfitości"
+				(J 3, 34). Ta pełnia Ducha nie miała pozostać jedynie udziałem Mesjasza, ale miała być udzielona całemu ludowi mesjańskiemu.
+				Chrystus wielokrotnie obiecywał wylanie Ducha. Spełnił najpierw tę swoją obietnicę w dniu Paschy, a następnie w sposób
+				bardziej zdumiewający w dniu Pięćdziesiątnicy. Apostołowie napełnieni Duchem Świętym zaczynają głosić "wielkie dzieła
+				Boże" (Dz 2, 11), a Piotr oznajmia, że to wylanie Ducha jest znakiem czasów mesjańskich. Ci, którzy wówczas uwierzyli
+				słowom Apostołów i pozwolili się ochrzcić, otrzymali z kolei dar Ducha Świętego. "Od tego czasu Apostołowie, wypełniając
+				wolę Chrystusa, przez wkładanie rąk udzielali neofitom daru Ducha Świętego, który uzupełniał łaskę chrztu. Dlatego w
+				Liście do Hebrajczyków wśród pierwszych elementów formacji chrześcijańskiej wymienia się naukę o chrzcie i wkładaniu
+				rąk. To wkładanie rąk w tradycji katolickiej słusznie uznaje się za początek sakramentu bierzmowania, który w pewien
+				sposób przedłuża w Kościele łaskę Pięćdziesiątnicy".
+				<br>
+				<br>Żródło: Katechizm Kościoła Katolickiego, Dział drugi, Rozdział pierwszy, Artykuł II: Sakrament bierzmowania.</p>
+			<h5>Liczba osób, które przystąpiły do sakramentu bierzmowania</h5>
+			<div class="statistics-container">
+				<div class='one'>36</div>
+				<div class='two'>52</div>
+				<div class='three'>48</div>
+			</div>
+			<div class="statistics-years">
+				<span>2016</span>
+				<span>2017</span>
+				<span>2018</span>
+			</div>
+			<h4 id="list-item-4">Małżeństwo</h4>
+			<p>"Przymierze małżeńskie, przez które mężczyzna i kobieta tworzą ze sobą wspólnotę całego życia, skierowaną ze swej natury
+				na dobro małżonków oraz do zrodzenia i wychowania potomstwa, zostało między ochrzczonymi podniesione przez Chrystusa
+				Pana do godności sakramentu". Pismo święte zaczyna się od opisu stworzenia mężczyzny i kobiety na obraz i podobieństwo
+				Boże, a kończy wizją "Godów Baranka" (Ap 19, 7. 9). Od początku do końca Pismo święte mówi o małżeństwie i jego "misterium",
+				o jego ustanowieniu i znaczeniu, jakie nadał mu Bóg, o jego początku i celu, o różnych sposobach jego urzeczywistniania
+				w ciągu historii zbawienia, o jego trudnościach wynikających z grzechu i jego odnowieniu "w Panu" (1 Kor 7, 39), w Nowym
+				Przymierzu Chrystusa i Kościoła. W obrządku łacińskim małżeństwo między dwojgiem wierzących katolików jest zazwyczaj
+				zawierane podczas Mszy świętej, ze względu na związek wszystkich sakramentów z Misterium Paschalnym Chrystusa. W Eucharystii
+				urzeczywistnia się pamiątka Nowego Przymierza, przez które Chrystus na zawsze zjednoczył się z Kościołem, swoją umiłowaną
+				Oblubienicą, za którą wydał samego siebie. Słuszne jest zatem, by małżonkowie przypieczętowali swoją zgodę na wzajemne
+				oddanie się sobie przez dar własnego życia, jednocząc się z ofiarą Chrystusa za Kościół, uobecnioną w Ofierze eucharystycznej,
+				i przyjmując Eucharystię, ażeby skoro spożywają to samo Ciało i tę samą Krew Chrystusa, "tworzyli jedno ciało" w Chrystusie.
+				"Obrzęd zaślubin jako sakramentalny akt uświęcenia... winien być sam w sobie ważny, godny i owocny". Przyszli małżonkowie
+				powinni więc przygotować się do celebracji swych zaślubin przez przyjęcie sakramentu pokuty.
+				<br>
+				<br>Żródło: Katechizm Kościoła Katolickiego, Dział drugi, Rozdział trzeci, Artykuł VII: Sakrament małżeństwa.</p>
+			<h5>Liczba zawartych związków małrzeńskich</h5>
+			<div class="statistics-container">
+				<div class='one'>36</div>
+				<div class='two'>52</div>
+				<div class='three'>48</div>
+			</div>
+			<div class="statistics-years">
+				<span>2016</span>
+				<span>2017</span>
+				<span>2018</span>
+			</div>
+			<h4 id="list-item-5">Pokuta</h4>
+			<p>„Weźmijcie Ducha Świętego! Którym grzechy odpuścicie, są im odpuszczone, a którym zatrzymacie, są im zatrzymane" (J 20,
+				22-23). Ci, którzy przystępują do sakramentu pokuty, otrzymują od miłosierdzia Bożego przebaczenie zniewagi wyrządzonej
+				Bogu i równocześnie dostępują pojednania z Kościołem, któremu, grzesząc, zadali ranę, a który przyczynia się do ich nawrócenia
+				miłością, przykładem i modlitwą. Nazywa się go sakramentem nawrócenia, ponieważ urzeczywistnia w sposób sakramentalny
+				wezwanie Jezusa do nawrócenia, drogę powrotu do Ojca, od którego człowiek oddalił się przez grzech. Nazywa się go sakramentem
+				pokuty, ponieważ ukazuje osobistą i eklezjalną drogę nawrócenia, skruchy i zadośćuczynienia ze strony grzesznego chrześcijanina.
+				Nazywa się go sakramentem spowiedzi, ponieważ oskarżenie - spowiedź z grzechów przed kapłanem jest istotnym elementem
+				tego sakramentu. Sakrament ten jest również „wyznaniem", uznaniem i uwielbieniem świętości Boga oraz Jego miłosierdzia
+				wobec grzesznego człowieka. Nazywa się go sakramentem przebaczenia, ponieważ przez sakramentalne rozgrzeszenie wypowiedziane
+				słowami kapłana Bóg udziela penitentowi „przebaczenia i pokoju". Nazywa się go sakramentem pojednania, ponieważ udziela
+				grzesznikowi miłości Boga przynoszącej pojednanie: „Pojednajcie się z Bogiem" (II Kor 5, 20). Ten, kto żyje miłosierną
+				miłością Boga, jest gotowy odpowiedzieć na wezwanie Pana: „Najpierw idź i pojednaj się z bratem swoim" (Mt 5, 24). Grzech
+				jest przede wszystkim obrazą Boga, zerwaniem jedności z Nim. Narusza on równocześnie komunię z Kościołem. Dlatego też
+				nawrócenie przynosi przebaczenie ze strony Boga, a także pojednanie z Kościołem, co wyraża i urzeczywistnia w sposób
+				liturgiczny sakrament pokuty i pojednania. Chrystus ustanowił sakrament pokuty dla wszystkich grzeszników w Kościele,
+				a przede wszystkim dla tych, którzy po chrzcie popełnili grzech ciężki i w ten sposób utracili łaskę chrztu oraz zadali
+				ranę komunii kościelnej. Sakrament pokuty daje im nową możliwość nawrócenia się i odzyskania łaski usprawiedliwienia.
+				<br>
+				<br>Żródło: Katechizm Kościoła Katolickiego</p>
+			<h5>Liczba wyspowiadanych</h5>
+			<div class="statistics-container">
+				<div class='one'>36</div>
+				<div class='two'>52</div>
+				<div class='three'>48</div>
+			</div>
+			<div class="statistics-years">
+				<span>2016</span>
+				<span>2017</span>
+				<span>2018</span>
+			</div>
+			<h4 id="list-item-6">Namaszczenie chorych</h4>
+			<p>"Przez święte chorych namaszczenie i modlitwę kapłanów cały Kościół poleca chorych cierpiącemu i uwielbionemu Panu, aby
+				ich podźwignął i zbawił; a nadto zachęca ich, aby łącząc się dobrowolnie z męką i śmiercią Chrystusa, przysparzali dobra
+				Ludowi Bożemu". Namaszczenie chorych "nie jest sakramentem przeznaczonym tylko dla tych, którzy znajdują się w ostatecznym
+				niebezpieczeństwie utraty życia. Odpowiednia zatem pora na przyjęcie tego sakramentu jest już wówczas, gdy wiernym zaczyna
+				grozić niebezpieczeństwo śmierci z powodu choroby lub starości". Jeśli chory, który został namaszczony, odzyskał zdrowie,
+				w przypadku nowej ciężkiej choroby może ponownie przyjąć ten sakrament. W ciągu tej samej choroby namaszczenie chorych
+				może być udzielone powtórnie, jeśli choroba się pogłębia. Jest rzeczą stosowną przyjąć sakrament namaszczenia chorych
+				przed trudną operacją. Odnosi się to także do osób starszych, u których pogłębia się słabość.
+				<br>
+				<br>Żródło: Katechizm Kościoła Katolickiego, Dział drugi, Rozdział drugi, Artykuł V: Namaszczenie chorych.</p>
+			<h5>Liczba osób, którym udzielono ostatniego namaszczenia</h5>
+			<div class="statistics-container">
+				<div class='one'>36</div>
+				<div class='two'>52</div>
+				<div class='three'>48</div>
+			</div>
+			<div class="statistics-years">
+				<span>2016</span>
+				<span>2017</span>
+				<span>2018</span>
+			</div>
+			<h4 id="list-item-7">Pogrzeb</h4>
+			<p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation
+				cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem.
+				Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum
+				nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum
+				fugiat ex est consectetur ipsum commodo tempor sunt in proident.Quis magna Lorem anim amet ipsum do mollit sit cillum
+				voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur
+				mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis
+			</p>
+			<h5>Liczba osób, które odeszły z naszej wspólnoty</h5>
+			<div class="statistics-container">
+				<div class='one'>36</div>
+				<div class='two'>52</div>
+				<div class='three'>48</div>
+			</div>
+			<div class="statistics-years">
+				<span>2016</span>
+				<span>2017</span>
+				<span>2018</span>
+			</div>
+		</div>
+	</div>
+	<div class="white-stripe" id="top-of-the-page"></div>
+	<footer>
+		<div class="container footer-top">
+			<div class="row">
+				<div class="col about-us">
+					<h4>O parafii</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis error magnam dolor numquam provident cupiditate laudantium.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis error magnam dolor numquam provident cupiditate
+						laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis error magnam dolor numquam provident
+						cupiditate laudantium</p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Historia parafii</button>
+					<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="accordion" id="accordionExample">
+									<div class="card">
+										<div class="card-header" id="headingOne">
+											<h5 class="mb-0">
+												<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													Wiek XVII - lata 1600 - 1611
+												</button>
+											</h5>
+										</div>
+										<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+											<div class="card-body">
+												1600 – fundacja Andrzeja Ruszkowskiego na rzecz parafii
+												<br> 1601 - erygowanie parafii
+												<br> 1603 – ukończenie budowy kościoła, objęcie nowej parafii przez ks. J. Szczerbica, proboszcza Unikowa
+												<br> 1604 – zgoda administratora diecezji gnieźnieńskiej ks. S. Sarnowskiego na odprawianie nabożeństw
+												<br> 1607 – konsekracja kościoła
+												<br> 1608 – sprowadzenie oo. bernardynów do Złoczewa, ofiarowanie im kościoła
+												<br> 1609 – 1611 – budowa drewnianego kościoła dla parafii
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingTwo">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+												    aria-controls="collapseTwo">
+													Wiek XVII - lata 1613 - 1690
+												</button>
+											</h5>
+										</div>
+										<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+											<div class="card-body">
+												1613 – 1617 – budowa kościoła murowanego dla parafii
+												<br> 1619 – śmierć Andrzeja Ruszkowskiego
+												<br> 1636 – znaczenie kościoła parafialnego znacznie osłabło, kościół sprawiał wrażenie opustoszałego
+												<br> 1644 – do tego roku administratora pełnili proboszczowie Unikowa
+												<br> 1644 – 1710 – proboszczami byli gwardianie oo. bernardynów
+												<br> 1648 – wizyta w kościele Mikołaja Ruszkowskiego, opata paradyskiego, syna fundatora
+												<br> 1690 – założenie Bractwa Szkaplerza
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingThree">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+												    aria-controls="collapseThree">
+													Wiek XVIII
+												</button>
+											</h5>
+										</div>
+										<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+											<div class="card-body">
+												1710 – proboszczem parafii został ks. Piotr Sienicki, gruntowny remont świątyni
+												<br> 1722 – konsekracja kościoła parafialnego ok. 1728 – w ołtarzu głównym został umieszczony obraz św. Andrzeja,
+												patrona parafii
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingFour">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+												    aria-controls="collapseFour">
+													Wiek XIX
+												</button>
+											</h5>
+										</div>
+										<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+											<div class="card-body">
+												1818 – włączenie Złoczewa do diecezji kujawsko – kaliskiej (włocławskiej)
+												<br> 1856 – z powodu złego stanu ówczesny burmistrz postulował o zamknięcie kościoła
+												<br> 1875 – ukończenie remontów
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingFive">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+												    aria-controls="collapseFive">
+													Wiek XX - lata 1907 - 1946
+												</button>
+											</h5>
+										</div>
+										<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+											<div class="card-body">
+												1907 – od strony południowej dobudowano do świątyni zakrystię
+												<br> 1939 – zamknięcie plebanii, wywiezienie ks. Władysława Ulatowskiego, proboszcza parafii złoczewskiej
+												<br> 1941 – zamknięcie kościoła parafialnego, wywiezienie ks. Antoniego Owczarka do obozu zagłady w Dachau
+												<br> 1945 – powrót księży do parafii
+												<br> 1946 – gruntowny remont wieży
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingSix">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+												    aria-controls="collapseSix">
+													Wiek XX - lata 1975 - 1995
+												</button>
+											</h5>
+										</div>
+										<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+											<div class="card-body">
+												1975 – nawiedzenie parafii przez kopię cudownego obrazu Matki Boskiej Częstochowskiej
+												<br> 1984 – remont kościoła
+												<br> 1989 – nawiedzenie parafii przez relikwie błogosławionej Urszuli Ledóchowskiej
+												<br> 1995 – ukończenie i poświęcenie kaplicy cmentarnej
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingSeven">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+												    aria-controls="collapseSeven">
+													Wiek XXI
+												</button>
+											</h5>
+										</div>
+										<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+											<div class="card-body">
+												2000 – obchody 400-lecia istnienia parafii w Złoczewie
+												<br> 2005 – wybudowanie i poświęcenie pomnika – popiersia Jana Pawła II
+												<br> 2010 - nawiedzenie parafii przez kopię cudownego obrazu Matki Boskiej Częstochowskiej
+												<br> 2011 - zakończenie remontu dachu kościoła
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col address">
+					<h4>kontakt</h4>
+					<div class="row nested">
+						<div class="col-6">Adres:</div>
+						<div class="col-6">ul. Kościelna 16 98-270 Złoczew Poland</div>
+					</div>
+					<div class="row nested">
+						<div class="col-6">Telephonon:</div>
+						<div class="col-6">+48 43 8202210</div>
+					</div>
+					<div class="row nested">
+						<div class="col col-6">E-mail:</div>
+						<div class="col col-6">success@gmail.com</div>
+					</div>
+					<div class="row nested">
+						<div class="col col-6">Numer konta:</div>
+						<div class="col col-6">87775646454564</div>
+					</div>
+				</div>
+				<div class="col parish-office">
+					<h4>kancelaria parafialna</h4>
+					<div class="row nested">
+						<div class="col col-6">Wtorek:</div>
+						<div class="col col-6">16.00 - 17.00</div>
+					</div>
+					<div class="row nested">
+						<div class="col col-6">Czwartek:</div>
+						<div class="col col-6">16.00 - 17.00</div>
+					</div>
+					<div class="row nested">
+						<div class="col col-6">Sobota:</div>
+						<div class="col col-6">08.30 - 10.00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container service-time-container">
+			<div class="row">
+				<div class="col service-time">
+					<h3>porządek mszy świętych</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col service-time-weekdays">
+					<h5>Dni powszednie</h5>
+					<div class="service-hours-container ">
+						<div class="row nested">
+							<div class="col col-6">
+								<p>Klasztor</p>
+							</div>
+							<div class="col col-6">
+								<p>07.00</p>
+							</div>
+						</div>
+						<div class="row nested">
+							<div class="col col-6">
+								<p>Fara</p>
+							</div>
+							<div class="col col-6">
+								<p>18.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col service-time-holidays">
+					<h5>Niedziela i Święta</h5>
+					<div class="service-hours-container">
+						<div class="row nested">
+							<div class="col col-6">
+								<p>Klasztor</p>
+							</div>
+							<div class="col col-6">
+								<p>07.00</p>
+							</div>
+						</div>
+						<div class="row nested">
+							<div class="col col-6">
+								<p>Fara</p>
+							</div>
+							<div class="col col-6">
+								<p>09.30</p>
+							</div>
+						</div>
+						<div class="row nested">
+							<div class="col col-6">
+								<p>Fara</p>
+							</div>
+							<div class="col col-6">
+								<p>10.00</p>
+							</div>
+						</div>
+						<div class="row nested">
+							<div class="col col-6">
+								<p>Fara</p>
+							</div>
+							<div class="col col-6">
+								<p>11.30</p>
+							</div>
+						</div>
+						<div class="row nested">
+							<div class="col col-6">
+								<p>Fara</p>
+							</div>
+							<div class="col col-6">
+								<p>18.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="col made-by">
+				<i class="far fa-copyright"><a href="#">Made by Kulek 2018</a></i>
+			</div>
+			<a href="#up">
+				<i id="to-the-top" class="fas fa-angle-double-up"></i>
+			</a>
+		</div>
+	</footer>
 
-      
-<!-- Bootstrap -->
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-      <script type="text/javascript" src="js/scripts.js"></script>
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>	
-		</body>
-	</html>
 
 
+	<!-- Bootstrap -->
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+	</script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	    crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+	    crossorigin="anonymous"></script>
+</body>
 
-
-
-
-
-
-
-
-
+</html>

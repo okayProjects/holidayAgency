@@ -6,7 +6,6 @@ body {
 	background-color: #125558;
 }
 
-
 .navbar {
 	background-color: initial;
 }
@@ -17,8 +16,8 @@ body {
 
 .navbar .collapse {
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -32,10 +31,10 @@ body {
 	color: #DBD9D9;
 }
 
-.navbar  .navbar-nav .nav-link:hover {
+.navbar .navbar-nav .nav-link:hover {
 	-webkit-transform: scale(1.1);
-	    -ms-transform: scale(1.1);
-	        transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .navbar .navbar-brand img {
@@ -51,10 +50,10 @@ body {
 
 .navbar .navbar-toggler-icon {
 	display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #000;
-    margin: 5px -5px;
+	width: 25px;
+	height: 3px;
+	background-color: #000;
+	margin: 5px -5px;
 }
 
 .navbar .dropdown-menu {
@@ -62,6 +61,7 @@ body {
 }
 
 /*my-jumbotron-carousel*/
+
 .my-jumbotron-carousel .carousel {
 	width: 100%;
 	height: 100vh;
@@ -69,9 +69,9 @@ body {
 
 .my-jumbotron-carousel .carousel-item {
 	-webkit-animation: scale 60s infinite;
-	        animation: scale 60s infinite;
+	animation: scale 60s infinite;
 	-webkit-animation-delay: 0.7s;
-	        animation-delay: 0.7s;
+	animation-delay: 0.7s;
 }
 
 .my-jumbotron-carousel .carousel-item img {
@@ -81,35 +81,31 @@ body {
 }
 
 @-webkit-keyframes scale {
-    0% {
-        display: block;
-        -webkit-transform: scale(1);
-                transform: scale(1);
-                opacity: 0.6;
-    }
-
-    100% {
-        display: block;
-        -webkit-transform: scale(1.4);
-                transform: scale(1.4);
-        		opacity: 1;        
-    }
+	0% {
+		display: block;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0.6;
+	}
+	100% {
+		display: block;
+		-webkit-transform: scale(1.4);
+		transform: scale(1.4);
+		opacity: 1;
+	}
 }
 
 @keyframes scale {
-    0% {
-        display: block;
-        -webkit-transform: scale(1);
-                transform: scale(1);
-                
-    }
-
-    100% {
-        display: block;
-        -webkit-transform: scale(1.4);
-                transform: scale(1.4);
-        		     
-    }
+	0% {
+		display: block;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	100% {
+		display: block;
+		-webkit-transform: scale(1.4);
+		transform: scale(1.4);
+	}
 }
 
 .my-jumbotron-carousel .carousel-caption {
@@ -121,10 +117,11 @@ body {
 	border-radius: 5px;
 	padding: 5px;
 	-webkit-box-shadow: 2px 2px 6px #000;
-	        box-shadow: 2px 2px 6px #000;
+	box-shadow: 2px 2px 6px #000;
 }
 
-.my-jumbotron-carousel .carousel-caption h5, .carousel-caption p {
+.my-jumbotron-carousel .carousel-caption h5,
+.carousel-caption p {
 	font-weight: bold;
 	color: #fff;
 	text-align: center;
@@ -158,27 +155,28 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .hover-style {
 	height: 300px;
 	overflow: hidden;
 	-webkit-transform: perspective(1000px) rotateY(30deg);
-	        transform: perspective(1000px) rotateY(30deg);
+	transform: perspective(1000px) rotateY(30deg);
 	border: 2px solid grey;
 	-webkit-box-shadow: 10px 10px 10px grey;
-	        box-shadow: 10px 10px 10px grey;
+	box-shadow: 10px 10px 10px grey;
 }
 
-.updates-board p, .updates-board h4 {
+.updates-board p,
+.updates-board h4 {
 	font-size: 18px;
 	color: #000;
 	padding: 20px 80px;
 }
 
-.updates-board ul > li {
+.updates-board ul>li {
 	font-size: 18px;
 	color: #000;
 	margin: 20px 0 20px 80px;
@@ -188,8 +186,8 @@ body {
 	font-size: 40px;
 	color: orange;
 	margin: 20px 150px 0;
-	    -webkit-transform: perspective(100px) rotateY(29deg) rotateX(-41deg);
-	            transform: perspective(100px) rotateY(29deg) rotateX(-41deg);
+	-webkit-transform: perspective(100px) rotateY(29deg) rotateX(-41deg);
+	transform: perspective(100px) rotateY(29deg) rotateX(-41deg);
 }
 
 .updates-board-container div:nth-child(2) i {
@@ -213,8 +211,8 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	padding: 80px 0;
 }
 
@@ -223,35 +221,52 @@ body {
 	padding-top: 50px;
 	padding: 30px;
 	color: #fff;
-	opacity: 0.5;
 	font-family: 'Pacifico', cursive;
+	opacity: 0.8;
 }
 
-.priest-carousel-container > div {
+.priest-carousel-container>div {
 	width: 250px;
 	height: 300px;
 }
 
 .priest-container-center {
 	-webkit-box-flex: 2;
-	    -ms-flex: 2;
-	        flex: 2;
+	-ms-flex: 2;
+	flex: 2;
 	margin-left: 150px;
 }
 
-.priest-container-center .card {
-	margin-right: 50px;
-}
-
-.priest-container-center .wierusz-center, .priest-container-center .tomaszewski-center {
+.priest-container-center .wierusz-center,
+.priest-container-center .tomaszewski-center {
 	display: none;
+	z-index: 2;
+	position: relative;
 }
 
-.priest-carousel-container .carousel-item > img {
+.priest-container-center .wierusz-center:before,
+.priest-container-center .tomaszewski-center:before {
+	z-index: 0;
+	content: ' ';
+	width: 110px;
+	height: 110px;
+	top: 71px;
+	left: -53px;
+	transform: rotate(45deg);
+	background-color: #F6F6F6;
+	position: absolute;
+	border: 1px solid #000;
+}
+
+.priest-container-center .tomaszewski-center:before {
+	left: 234px;
+}
+
+.priest-carousel-container .carousel-item>img {
 	width: 150px;
 	height: 200px;
 	-webkit-filter: grayscale();
-	        filter: grayscale();
+	filter: grayscale();
 }
 
 /*section parish-figures*/
@@ -271,7 +286,7 @@ body {
 	height: 500px;
 }
 
-.parish-figures-container div > h5 {
+.parish-figures-container div>h5 {
 	font-size: 50px;
 	color: darkred;
 	font-weight: bold;
@@ -292,20 +307,17 @@ body {
 }
 
 .worship-groups-caption {
-    transform: translate(432%, -550%);
+	transform: translate(432%, -550%);
 }
-
 
 /*footer*/
 
 footer {
-	
 	padding-top: 50px;
 	background-color: #274747;
 }
 
-
-.col h4  {
+.col h4 {
 	color: #DBD9D9;
 	text-transform: uppercase;
 	margin-bottom: 30px;
@@ -361,7 +373,7 @@ footer .about-us .modal button:hover {
 	background-color: initial;
 }
 
-.nested > div {
+.nested>div {
 	color: #DBD9D9;
 	font-size: 15px;
 	padding: 0;
@@ -383,12 +395,10 @@ footer .service-time-container {
 	max-width: 1583px;
 }
 
-
 footer div[class*="service"] h3 {
 	text-transform: uppercase;
 	font-weight: bold;
 	padding: 50px 0;
-
 }
 
 footer div[class*="service"] h5 {
@@ -402,11 +412,13 @@ footer div[class*="service"] {
 	padding: 0 100px 30px;
 }
 
-footer div[class*="service"] h6, footer div[class*="service"] p {
+footer div[class*="service"] h6,
+footer div[class*="service"] p {
 	color: #000;
 }
 
-footer div[class*="service"] .col-6, footer div[class*="service"] .col-6 p {
+footer div[class*="service"] .col-6,
+footer div[class*="service"] .col-6 p {
 	padding: 0 30px;
 }
 
@@ -425,7 +437,8 @@ footer .footer-bottom {
 	padding: 10px;
 }
 
-footer .footer-bottom i, footer .footer-bottom i a {
+footer .footer-bottom i,
+footer .footer-bottom i a {
 	color: #DBD9D9;
 	text-decoration: none;
 	padding: 10px;
@@ -453,12 +466,13 @@ footer .footer-bottom a i {
 }
 
 .bottom-fixed {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1030;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1030;
 }
+
 /*INTENCJE*/
 
 .white-stripe {
@@ -493,24 +507,24 @@ nav-tabs .nav-item {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-ms-flex-wrap: nowrap;
-	    flex-wrap: nowrap;
+	flex-wrap: nowrap;
 	padding: 30px;
 }
 
 .table-image-container {
 	-webkit-box-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
+	-ms-flex: 1;
+	flex: 1;
 	padding-right: 20px;
 }
 
 .table-responsive-sm {
 	-webkit-box-flex: 6;
-	    -ms-flex: 6;
-	        flex: 6; 
+	-ms-flex: 6;
+	flex: 6;
 }
 
 .table-image-container img {
@@ -519,15 +533,18 @@ nav-tabs .nav-item {
 	border-radius: 10px;
 }
 
-.table-image-container img:nth-child(2), .table-image-container img:nth-child(3) {
+.table-image-container img:nth-child(2),
+.table-image-container img:nth-child(3) {
 	display: none;
 }
 
-.table th, .table td {
+.table th,
+.table td {
 	color: #dbd9d9;
 }
 
-.table th, .table td {
+.table th,
+.table td {
 	border: none;
 }
 
@@ -551,32 +568,32 @@ nav-tabs .nav-item {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: nowrap;
-	    flex-wrap: nowrap;
+	flex-wrap: nowrap;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .my-container .list-group {
 	margin-top: 50px;
 	-webkit-box-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
+	-ms-flex: 1;
+	flex: 1;
 	margin-right: 30px;
 }
 
 .list-group-item.active {
 	background-color: #274747;
-    border-color: #274747;
+	border-color: #274747;
 }
 
 .my-container .scrollspy-example {
 	-webkit-box-flex: 4;
-	    -ms-flex: 4;
-	        flex: 4;
+	-ms-flex: 4;
+	flex: 4;
 	position: relative;
 	height: 450px;
 	overflow-y: scroll;
@@ -584,7 +601,8 @@ nav-tabs .nav-item {
 	margin-top: 50px;
 }
 
-.my-container .scrollspy-example h4, .my-container .scrollspy-example p {
+.my-container .scrollspy-example h4,
+.my-container .scrollspy-example p {
 	color: #dbd9d9;
 	text-align: justify;
 	line-height: 30px;
@@ -603,7 +621,6 @@ nav-tabs .nav-item {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-
 	width: 100%;
 	height: 300px;
 	border-bottom: 1px solid #fff;
@@ -618,36 +635,35 @@ nav-tabs .nav-item {
 	margin-left: 8%;
 	margin-top: 31%;
 	-webkit-transition-duration: 5s;
-	     -o-transition-duration: 5s;
-	        transition-duration: 5s;
+	-o-transition-duration: 5s;
+	transition-duration: 5s;
 	color: #dbd9d9;
 	text-align: center;
 	padding-top: 10px;
 }
 
-
-.statistics-container:hover > .one {
+.statistics-container:hover>.one {
 	background-color: green;
 	margin-top: 10%;
 	height: 215px;
 }
 
-.statistics-container:hover > .two {
+.statistics-container:hover>.two {
 	background-color: yellow;
 	margin-top: 2%;
 	height: 280px;
 	-webkit-transition-delay: 1s;
-	     -o-transition-delay: 1s;
-	        transition-delay: 1s;
+	-o-transition-delay: 1s;
+	transition-delay: 1s;
 }
 
-.statistics-container:hover > .three {
+.statistics-container:hover>.three {
 	background-color: blue;
 	margin-top: 4%;
 	height: 263px;
 	-webkit-transition-delay: 2s;
-	     -o-transition-delay: 2s;
-	        transition-delay: 2s;
+	-o-transition-delay: 2s;
+	transition-delay: 2s;
 }
 
 .statistics-years span {
@@ -662,30 +678,30 @@ nav-tabs .nav-item {
 
 /*END OF SAKRAMENTY*/
 
-@media(max-width: 768px){
-    .my-jumbotron-carousel .carousel-item img {
-	max-width: 100%;
-	height: 200px;
+@media(max-width: 768px) {
+	.my-jumbotron-carousel .carousel-item img {
+		max-width: 100%;
+		height: 200px;
 	}
 	.navbar .navbar-brand img {
-	width: 40px;
-	height: 45px;
+		width: 40px;
+		height: 45px;
 	}
-
 	/*updates*/
 	.updates-board {
 		margin: 0;
 		padding: 20px 0 0;
 		height: 550px;
 	}
-	.updates-board p, .updates-board h4 {
+	.updates-board p,
+	.updates-board h4 {
 		font-size: 13px;
 		padding: 20px 10px;
 	}
-	.updates-board ul > li {
+	.updates-board ul>li {
 		font-size: 15px;
 		margin: 10px 0;
-		padding: 0;	
+		padding: 0;
 	}
 	footer div[class*="service"] h3 {
 		padding: 0;
@@ -700,32 +716,35 @@ nav-tabs .nav-item {
 	footer div[class*="service"] {
 		padding: 0;
 	}
-	footer div[class*="service"] h6, footer div[class*="service"] p {
+	footer div[class*="service"] h6,
+	footer div[class*="service"] p {
 		font-size: 14px;
 		margin: 0;
 	}
-	footer div[class*="service"] .col-6, footer div[class*="service"] .col-6 p {
+	footer div[class*="service"] .col-6,
+	footer div[class*="service"] .col-6 p {
 		padding: 2px 20px;
 	}
 	footer div[class*="service"] h5 {
-	padding-bottom: 0;
+		padding-bottom: 0;
 	}
 	.col h4 {
 		font-size: 18px;
 	}
-	.nested div:first-child{
+	.nested div:first-child {
 		font-size: 12px;
 		padding: 10px 50px;
 	}
 	.nested div:last-child {
-	padding: 10px 2px 0;
-	font-size: 12px;
+		padding: 10px 2px 0;
+		font-size: 12px;
 	}
-	footer .address, footer .parish-office {
+	footer .address,
+	footer .parish-office {
 		padding: 20px 40px;
 	}
 	footer div[class*="service"] {
-	padding: 30px;
+		padding: 30px;
 	}
 	footer .about-us button {
 		width: 80%;
@@ -736,19 +755,18 @@ nav-tabs .nav-item {
 	.footer-bottom .made-by {
 		padding: 10px;
 	}
-	footer .footer-bottom i, footer .footer-bottom i a {
+	footer .footer-bottom i,
+	footer .footer-bottom i a {
 		padding: 7px;
 		font-size: 16px;
 	}
 	footer .footer-bottom a i {
-	font-size: 40px;
-	position: fixed;
-	bottom: 10px;
-	right: 5px;
-}
-	
+		font-size: 40px;
+		position: fixed;
+		bottom: 10px;
+		right: 5px;
+	}
 	/*priest-carousel*/
-
 	.priest-carousel-container {
 		padding: 0;
 	}
@@ -759,26 +777,25 @@ nav-tabs .nav-item {
 		line-height: 20px;
 		font-size: 15px;
 	}
-	.priest-carousel-container > div {
+	.priest-carousel-container>div {
 		width: 100px;
 		height: 200px;
 	}
 	.priest-container-center {
 		display: none;
 	}
-	.priest-carousel-container .carousel-item > img {
+	.priest-carousel-container .carousel-item>img {
 		width: 100%;
 		height: 130px;
 	}
 	/*section parish-figures*/
-
-	.parish-figures{
-	height: 250px;
+	.parish-figures {
+		height: 250px;
 	}
 	.parish-figures-container {
 		height: 250px;
 	}
-	.parish-figures-container div > h5 {
+	.parish-figures-container div>h5 {
 		font-size: 30px;
 	}
 	.number-caption {
@@ -793,27 +810,23 @@ nav-tabs .nav-item {
 		transform: translate(440%, -600%);
 	}
 	.worship-groups-caption {
-	    transform: translate(217%, -600%);
+		transform: translate(217%, -600%);
 	}
 	.parish-figures .number-caption {
 		color: white;
 		font-size: 12px;
 	}
-	
-
 	/*INTENCJE*/
 	.white-stripe {
-	height: 50px;
+		height: 50px;
 	}
 	.table-image-container {
 		display: none;
 	}
-	.service-times ul > li:nth-child(5) {
+	.service-times ul>li:nth-child(5) {
 		margin-left: -15px;
 	}
-
 	/*SAKRAMENTY*/
-
 	.table-image-container {
 		display: none;
 	}
@@ -836,17 +849,17 @@ nav-tabs .nav-item {
 	.statistics-container {
 		height: 150px;
 	}
-	.statistics-container:hover > .one {
+	.statistics-container:hover>.one {
 		height: 130px;
 	}
-	.statistics-container:hover > .two {
+	.statistics-container:hover>.two {
 		height: 145px;
 	}
-	.statistics-container:hover > .three {
+	.statistics-container:hover>.three {
 		height: 141px;
 	}
 	.statistics-years span {
-	padding-left: 12px;
-	font-size: 14px;
+		padding-left: 12px;
+		font-size: 14px;
 	}
 }
