@@ -201,70 +201,81 @@ body {
 /*priest-carousel*/
 
 .priests {
+	height: 100vh;
 	background-image: url('../images/priests-background-image.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-.priest-carousel-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
+.section-priests-container {
+	margin: 0 auto;
+	width: 80vw;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 80px 0;
+}
+
+.section-priests-container>div:nth-child(odd) {
+	margin-top: 50px;
+	height: 300px;
+	width: 250px;
+}
+
+.section-priests-container>div:nth-child(even) {
+	margin-top: 20px;
+	height: 300px;
+	width: 700px;
+	position: relative;
+}
+
+.section-priests-container>div:nth-child(even) p {
+	color: whitesmoke;
+	text-align: justify;
+	position: relative;
+}
+
+.section-priests-container>div:nth-child(even) .wierusz-center:before {
+	z-index: 1;
+	content: ' ';
+	width: 60px;
+	height: 60px;
+	top: 73px;
+	left: -41px;
+	transform: rotate(45deg);
+	position: absolute;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.section-priests-container>div:nth-child(even) .tomaszewski-center:before {
+	right: -36px;
+	z-index: 1;
+	content: ' ';
+	width: 60px;
+	height: 60px;
+	top: 73px;
+	transform: rotate(45deg);
+	position: absolute;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+.tomaszewski-center,
+.wierusz-center {
+	display: none;
 }
 
 .priests blockquote h3 {
 	line-height: 40px;
-	padding-top: 50px;
-	padding: 30px;
+	padding: 50px 0 50px 150px;
 	color: #fff;
 	font-family: 'Pacifico', cursive;
 	opacity: 0.8;
 }
 
-.priest-carousel-container>div {
+.section-priests-container .carousel-item>img {
+	margin: 0 auto;
 	width: 250px;
 	height: 300px;
-}
-
-.priest-container-center {
-	-webkit-box-flex: 2;
-	-ms-flex: 2;
-	flex: 2;
-	margin-left: 150px;
-}
-
-.priest-container-center .wierusz-center,
-.priest-container-center .tomaszewski-center {
-	display: none;
-	z-index: 2;
-	position: relative;
-}
-
-.priest-container-center .wierusz-center:before,
-.priest-container-center .tomaszewski-center:before {
-	z-index: 0;
-	content: ' ';
-	width: 110px;
-	height: 110px;
-	top: 71px;
-	left: -53px;
-	transform: rotate(45deg);
-	background-color: #F6F6F6;
-	position: absolute;
-	border: 1px solid #000;
-}
-
-.priest-container-center .tomaszewski-center:before {
-	left: 234px;
-}
-
-.priest-carousel-container .carousel-item>img {
-	width: 150px;
-	height: 200px;
 	-webkit-filter: grayscale();
 	filter: grayscale();
 }
@@ -364,12 +375,12 @@ footer .about-us .modal button {
 	color: #DBD9D9;
 	font-size: 20px;
 	border: none;
-	transition: transform 3s;
+	transition: transform 1s;
 }
 
 footer .about-us .modal button:hover {
 	text-decoration: none;
-	transform: translateX(30px);
+	transform: translateX(50px);
 	background-color: initial;
 }
 
@@ -767,26 +778,44 @@ nav-tabs .nav-item {
 		right: 5px;
 	}
 	/*priest-carousel*/
-	.priest-carousel-container {
-		padding: 0;
+	.section-priests-container {
+		display: flex;
+		width: 95vw;
 	}
-	.priests {
-		padding-top: 15px;
+	.section-priests-container>div:nth-child(odd) {
+		margin-top: 0;
+		height: 100px;
+		width: 80px;
 	}
-	.priests h3 {
-		line-height: 20px;
-		font-size: 15px;
+	.section-priests-container>div:nth-child(even) {
+		margin-top: 120px;
+		margin-left: -85px;
+		height: 90vh;
+		width: 95vw;
 	}
-	.priest-carousel-container>div {
-		width: 100px;
-		height: 200px;
+	.section-priests-container>div:nth-child(even) p {
+		color: whitesmoke;
+		text-align: justify;
+		font-size: 10px;
+		width: 95vw;
+		position: absolute;
+		left: 5px;
 	}
-	.priest-container-center {
+	.priests blockquote h3 {
+		font-size: 12px;
+		line-height: 17px;
+		padding: 5px;
+	}
+	.section-priests-container .carousel-item>img {
+		margin: 0 auto;
+		width: 80px;
+		height: 100px;
+	}
+	.section-priests-container>div:nth-child(even) .tomaszewski-center:before {
 		display: none;
 	}
-	.priest-carousel-container .carousel-item>img {
-		width: 100%;
-		height: 130px;
+	.section-priests-container>div:nth-child(even) .wierusz-center:before {
+		display: none;
 	}
 	/*section parish-figures*/
 	.parish-figures {

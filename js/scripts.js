@@ -52,16 +52,16 @@ $('.current-updates-three').hover(function () {
 })
 
 $('.wierusz-inner').hover(function () {
-	$('.wierusz-center').fadeIn();
+	$('.wierusz-center').fadeIn(3000);
 }, function () {
-	$('.wierusz-center').fadeOut();
+	$('.wierusz-center').fadeOut(1000);
 });
 
 
 $('.tomaszewski-inner').hover(function () {
-	$('.tomaszewski-center').fadeIn();
+	$('.tomaszewski-center').fadeIn(3000);
 }, function () {
-	$('.tomaszewski-center').fadeOut();
+	$('.tomaszewski-center').fadeOut(1000);
 });
 
 
@@ -99,7 +99,9 @@ $(function () {
 	})
 })
 
-
+$('.about-us .modal button').click(function () {
+	$(this).css('text-decoration', 'none');
+})
 
 /*
 
