@@ -225,8 +225,12 @@ body {
 .section-priests-container {
 	margin: 0 auto;
 	width: 80vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .section-priests-container>div:nth-child(odd) {
@@ -255,7 +259,9 @@ body {
 	height: 60px;
 	top: 73px;
 	left: -41px;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 	position: absolute;
 	border-left: 1px solid #fff;
 	border-bottom: 1px solid #fff;
@@ -268,7 +274,9 @@ body {
 	width: 60px;
 	height: 60px;
 	top: 73px;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 	position: absolute;
 	border-top: 1px solid #fff;
 	border-right: 1px solid #fff;
@@ -307,9 +315,15 @@ body {
 }
 
 .parish-figures-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	height: 500px;
 }
 
@@ -326,15 +340,21 @@ body {
 }
 
 .area-number-caption {
-	transform: translate(-16%, -550%);
+	-webkit-transform: translate(-16%, -550%);
+	    -ms-transform: translate(-16%, -550%);
+	        transform: translate(-16%, -550%);
 }
 
 .family-number-caption {
-	transform: translate(717%, -550%);
+	-webkit-transform: translate(717%, -550%);
+	    -ms-transform: translate(717%, -550%);
+	        transform: translate(717%, -550%);
 }
 
 .worship-groups-caption {
-	transform: translate(432%, -550%);
+	-webkit-transform: translate(432%, -550%);
+	    -ms-transform: translate(432%, -550%);
+	        transform: translate(432%, -550%);
 }
 
 /*footer*/
@@ -393,12 +413,18 @@ footer .about-us .modal button {
 	color: #DBD9D9;
 	font-size: 20px;
 	border: none;
+	-webkit-transition: -webkit-transform 1s;
+	transition: -webkit-transform 1s;
+	-o-transition: transform 1s;
 	transition: transform 1s;
+	transition: transform 1s, -webkit-transform 1s;
 }
 
 footer .about-us .modal button:hover {
 	text-decoration: none;
-	transform: translateX(50px);
+	-webkit-transform: translateX(50px);
+	    -ms-transform: translateX(50px);
+	        transform: translateX(50px);
 	background-color: initial;
 }
 
@@ -465,8 +491,12 @@ footer .footer-bottom {
 }
 
 .footer-bottom .made-by {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 10px;
 }
 
@@ -801,6 +831,8 @@ nav-tabs .nav-item {
 	}
 	/*priest-carousel*/
 	.section-priests-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		width: 95vw;
 	}
@@ -855,13 +887,19 @@ nav-tabs .nav-item {
 		color: darkred;
 	}
 	.area-number-caption {
-		transform: translate(-10%, -600%);
+		-webkit-transform: translate(-10%, -600%);
+		    -ms-transform: translate(-10%, -600%);
+		        transform: translate(-10%, -600%);
 	}
 	.family-number-caption {
-		transform: translate(440%, -600%);
+		-webkit-transform: translate(440%, -600%);
+		    -ms-transform: translate(440%, -600%);
+		        transform: translate(440%, -600%);
 	}
 	.worship-groups-caption {
-		transform: translate(217%, -600%);
+		-webkit-transform: translate(217%, -600%);
+		    -ms-transform: translate(217%, -600%);
+		        transform: translate(217%, -600%);
 	}
 	.parish-figures .number-caption {
 		color: white;
