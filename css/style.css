@@ -8,6 +8,7 @@ body {
 
 .navbar {
 	background-color: initial;
+	z-index: 2;
 }
 
 .navbar-scroll {
@@ -62,6 +63,14 @@ body {
 
 /*my-jumbotron-carousel*/
 
+.my-jumbotron-carousel {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	z-index: 1;
+}
+
 .my-jumbotron-carousel .carousel {
 	width: 100%;
 	height: 100vh;
@@ -110,7 +119,7 @@ body {
 
 .my-jumbotron-carousel .carousel-caption {
 	width: 35%;
-	height: 18%;
+	height: 20%;
 	background-color: rgba(0, 0, 0, 0.2);
 	margin: 0 auto;
 	margin-bottom: 4%;
@@ -125,6 +134,7 @@ body {
 	font-weight: bold;
 	color: #fff;
 	text-align: center;
+	letter-spacing: 2px;
 }
 
 .my-jumbotron-carousel .carousel-caption h5 {
@@ -135,11 +145,14 @@ body {
 /*updates*/
 
 .updates-board {
+	position: relative;
 	font-family: 'Gloria Hallelujah', cursive;
 	padding: 70px 50px 220px;
 	background-image: url('../images/updates-board-background.jpg');
 	background-size: cover;
 	height: 100vh;
+	margin-top: 100vh;
+	z-index: 1;
 }
 
 .updates-board h3 {
@@ -201,10 +214,12 @@ body {
 /*priest-carousel*/
 
 .priests {
+	position: relative;
 	height: 100vh;
 	background-image: url('../images/priests-background-image.jpg');
 	background-size: cover;
 	background-attachment: fixed;
+	z-index: 2;
 }
 
 .section-priests-container {
@@ -288,6 +303,7 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	height: 500px;
+	z-index: 2;
 }
 
 .parish-figures-container {
@@ -324,8 +340,10 @@ body {
 /*footer*/
 
 footer {
+	position: relative;
 	padding-top: 50px;
 	background-color: #274747;
+	z-index: 2;
 }
 
 .col h4 {
@@ -382,6 +400,10 @@ footer .about-us .modal button:hover {
 	text-decoration: none;
 	transform: translateX(50px);
 	background-color: initial;
+}
+
+.modal-backdrop {
+	z-index: 0;
 }
 
 .nested>div {
