@@ -8,7 +8,7 @@ body {
 
 .navbar {
 	background-color: initial;
-	z-index: 2;
+	z-index: 3;
 }
 
 .navbar-scroll {
@@ -24,8 +24,8 @@ body {
 .navbar .navbar-nav .nav-link {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 14px;
-	margin-left: 20px;
+	font-size: 18px;
+	margin-left: 40px;
 }
 
 .navbar .navbar-nav .nav-link-scroll-change {
@@ -41,6 +41,7 @@ body {
 .navbar .navbar-brand img {
 	width: 70px;
 	height: 80px;
+	border-radius: 20%;
 }
 
 .navbar .navbar-toggler {
@@ -62,7 +63,6 @@ body {
 }
 
 /*my-jumbotron-carousel*/
-
 .my-jumbotron-carousel {
 	position: fixed;
 	left: 0;
@@ -96,6 +96,7 @@ body {
 		transform: scale(1);
 		opacity: 0.6;
 	}
+
 	100% {
 		display: block;
 		-webkit-transform: scale(1.4);
@@ -110,6 +111,7 @@ body {
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
+
 	100% {
 		display: block;
 		-webkit-transform: scale(1.4);
@@ -143,10 +145,8 @@ body {
 }
 
 /*updates*/
-
 .updates-board {
 	position: relative;
-	font-family: 'Gloria Hallelujah', cursive;
 	padding: 70px 50px 220px;
 	background-image: url('../images/updates-board-background.jpg');
 	background-size: cover;
@@ -156,23 +156,28 @@ body {
 }
 
 .updates-board h3 {
+	font-family: 'Gloria Hallelujah', cursive;
 	text-align: center;
 	font-size: 55px;
 	padding-bottom: 30px;
 	color: #000;
+	margin-bottom: 40px;
 }
 
 .updates-board-container {
-	height: 100vh;
+	height: 80vh;
+	overflow: auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .hover-style {
+	position: relative;
+	flex-basis: 50%;
 	height: 300px;
 	overflow: hidden;
 	-webkit-transform: perspective(1000px) rotateY(30deg);
@@ -180,6 +185,10 @@ body {
 	border: 2px solid grey;
 	-webkit-box-shadow: 10px 10px 10px grey;
 	box-shadow: 10px 10px 10px grey;
+}
+
+.hover-style button {
+	border-radius: 20px;
 }
 
 .updates-board p,
@@ -192,34 +201,56 @@ body {
 .updates-board ul>li {
 	font-size: 18px;
 	color: #000;
-	margin: 20px 0 20px 80px;
+	margin: 20px 0 20px 40px;
 }
 
 .hover-style i {
+	position: absolute;
+	top: 5%;
+	left: 50%;
 	font-size: 40px;
 	color: orange;
-	margin: 20px 150px 0;
 	-webkit-transform: perspective(100px) rotateY(29deg) rotateX(-41deg);
 	transform: perspective(100px) rotateY(29deg) rotateX(-41deg);
+}
+
+.hover-style h2 {
+	text-align: center;
+	padding: 30px;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.hover-style button,
+.current-updates-one button,
+.current-updates-two button {
+	margin-top: 14px;
+	padding: 15px 25px;
+	font-size: 25px;
+	cursor: pointer;
+	font-family: 'Gloria Hallelujah', cursive;
+	border-radius: 10%;
 }
 
 .updates-board-container div:nth-child(2) i {
 	color: green;
 }
 
-.updates-board-container div:nth-child(3) i {
-	color: yellow;
+.hide {
+	display: none;
+}
+
+.afterClickButton {
+	margin-bottom: 30px;
 }
 
 /*priest-carousel*/
-
 .priests {
 	position: relative;
 	height: 100vh;
 	background-image: url('../images/priests-background-image.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	z-index: 2;
+	z-index: 1;
 }
 
 .section-priests-container {
@@ -229,8 +260,8 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 .section-priests-container>div:nth-child(odd) {
@@ -260,8 +291,8 @@ body {
 	top: 73px;
 	left: -41px;
 	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 	position: absolute;
 	border-left: 1px solid #fff;
 	border-bottom: 1px solid #fff;
@@ -275,8 +306,8 @@ body {
 	height: 60px;
 	top: 73px;
 	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 	position: absolute;
 	border-top: 1px solid #fff;
 	border-right: 1px solid #fff;
@@ -304,14 +335,13 @@ body {
 }
 
 /*section parish-figures*/
-
 .parish-figures {
 	position: relative;
 	background-image: url(../images/parish-figures-background.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	height: 500px;
-	z-index: 2;
+	z-index: 1;
 }
 
 .parish-figures-container {
@@ -319,12 +349,27 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-around;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	height: 500px;
+}
+
+.number {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	width: 300px;
+}
+
+.number i {
+	font-size: 50px;
+	color: royalblue;
+	margin-top: 30px;
 }
 
 .parish-figures-container div>h5 {
@@ -336,34 +381,14 @@ body {
 .number-caption {
 	font-size: 25px;
 	color: blue;
-	position: absolute;
-}
-
-.area-number-caption {
-	-webkit-transform: translate(-16%, -550%);
-	    -ms-transform: translate(-16%, -550%);
-	        transform: translate(-16%, -550%);
-}
-
-.family-number-caption {
-	-webkit-transform: translate(717%, -550%);
-	    -ms-transform: translate(717%, -550%);
-	        transform: translate(717%, -550%);
-}
-
-.worship-groups-caption {
-	-webkit-transform: translate(432%, -550%);
-	    -ms-transform: translate(432%, -550%);
-	        transform: translate(432%, -550%);
 }
 
 /*footer*/
-
 footer {
 	position: relative;
 	padding-top: 50px;
 	background-color: #274747;
-	z-index: 2;
+	z-index: 1;
 }
 
 .col h4 {
@@ -423,13 +448,13 @@ footer .about-us .modal button {
 footer .about-us .modal button:hover {
 	text-decoration: none;
 	-webkit-transform: translateX(50px);
-	    -ms-transform: translateX(50px);
-	        transform: translateX(50px);
+	-ms-transform: translateX(50px);
+	transform: translateX(50px);
 	background-color: initial;
 }
 
 .modal-backdrop {
-	z-index: 0;
+	z-index: -1;
 }
 
 .nested>div {
@@ -442,10 +467,12 @@ footer .about-us .modal button:hover {
 	padding: 0 70px 60px 0;
 	font-weight: bold;
 	text-align: right;
+	font-size: 14px;
 }
 
 .nested div:last-child {
 	padding: 0 60px 0 0;
+	font-size: 14px;
 }
 
 footer .service-time-container {
@@ -495,8 +522,8 @@ footer .footer-bottom {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	padding: 10px;
 }
 
@@ -537,12 +564,54 @@ footer .footer-bottom a i {
 }
 
 /*INTENCJE*/
-
 .white-stripe {
+	position: relative;
 	background-color: #fff;
 	width: 100%;
 	height: 100px;
 	margin-top: 98px;
+	overflow: hidden;
+}
+
+.white-stripe p {
+	position: absolute;
+	white-space: nowrap;
+	font-weight: bold;
+	color: #125558;
+	left: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 18px;
+	line-height: 100%;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	animation: changeText 200s linear both;
+}
+
+@keyframes changeText {
+	0% {
+		transform: translate(100%, -50%);
+	}
+
+	/* 3% {
+		transform: translate(100%, -50%);
+	}
+
+	6% {
+		transform: translate(0, -50%);
+	}
+
+	30% {
+		transform: translate(0, -50%);
+	}
+
+	33% {
+		transform: translate(-100%, -50%);
+	} */
+	100% {
+		transform: translate(-1340%, -50%);
+	}
 }
 
 .service-times h3 {
@@ -557,7 +626,7 @@ footer .footer-bottom a i {
 	padding: 0 45px;
 }
 
-nav-tabs .nav-item {
+.nav-tabs .nav-item {
 	padding: 0 1px;
 }
 
@@ -612,11 +681,8 @@ nav-tabs .nav-item {
 }
 
 /*end of INTENCJE*/
-
 /*SAKRAMENTY*/
-
 /*scrollspy*/
-
 .white-stripe {
 	background-color: #fff;
 	width: 100%;
@@ -677,10 +743,15 @@ nav-tabs .nav-item {
 }
 
 .my-container .scrollspy-example h4 {
-	padding: 10px 0;
+	padding: 70px 0;
+}
+
+.document-list {
+	color: #DBD9D9;
 }
 
 .statistics-container {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -691,144 +762,213 @@ nav-tabs .nav-item {
 }
 
 .statistics-container div {
-	width: 30px;
-	height: 50px;
+	position: absolute;
+	bottom: 0;
+	width: 3%;
+	height: 10%;
 	border-radius: 10%;
 	background-color: #e74c3c;
-	margin-left: 8%;
-	margin-top: 31%;
-	-webkit-transition-duration: 5s;
-	-o-transition-duration: 5s;
-	transition-duration: 5s;
+	-webkit-transition-duration: 2s;
+	-o-transition-duration: 2s;
+	transition-duration: 2s;
 	color: #dbd9d9;
 	text-align: center;
 	padding-top: 10px;
 }
 
-.statistics-container:hover>.one {
-	background-color: green;
-	margin-top: 10%;
-	height: 215px;
+.statistics-container div:nth-child(1) {
+	left: 7.5%;
 }
 
-.statistics-container:hover>.two {
+.statistics-container div:nth-child(2) {
+	left: 19.5%;
+}
+
+.statistics-container div:nth-child(3) {
+	left: 31.5%;
+}
+
+.statistics-container:hover div:nth-child(1) {
+	background-color: green;
+	height: 78%;
+}
+
+.statistics-container:hover div:nth-child(2) {
 	background-color: yellow;
-	margin-top: 2%;
-	height: 280px;
+	height: 35%;
 	-webkit-transition-delay: 1s;
 	-o-transition-delay: 1s;
+	transition-delay: .5s;
+}
+
+.statistics-container:hover div:nth-child(3) {
+	background-color: blue;
+	height: 87%;
+	-webkit-transition-delay: 2s;
+	-o-transition-delay: 2s;
 	transition-delay: 1s;
 }
 
-.statistics-container:hover>.three {
-	background-color: blue;
-	margin-top: 4%;
-	height: 263px;
-	-webkit-transition-delay: 2s;
-	-o-transition-delay: 2s;
-	transition-delay: 2s;
-}
-
-.statistics-years span {
+.statistics-container span {
+	position: absolute;
+	bottom: -10%;
 	color: #dbd9d9;
-	padding-left: 55px;
 }
 
-.statistics-years {
-	margin-bottom: 100px;
-	border-bottom: 1px solid #fff;
+.statistics-container span:nth-of-type(1) {
+	left: 6.5%;
+}
+
+.statistics-container span:nth-of-type(2) {
+	left: 18.5%;
+}
+
+.statistics-container span:nth-of-type(3) {
+	left: 30.5%;
 }
 
 /*END OF SAKRAMENTY*/
-
 @media(max-width: 768px) {
 	.my-jumbotron-carousel .carousel-item img {
 		max-width: 100%;
-		height: 200px;
+		height: 250px;
 	}
+
 	.navbar .navbar-brand img {
 		width: 40px;
 		height: 45px;
 	}
+
+	.my-jumbotron-carousel {
+		position: initial;
+	}
+
 	/*updates*/
 	.updates-board {
 		margin: 0;
 		padding: 20px 0 0;
 		height: 550px;
 	}
+
 	.updates-board p,
 	.updates-board h4 {
 		font-size: 13px;
 		padding: 20px 10px;
 	}
+
 	.updates-board ul>li {
 		font-size: 15px;
 		margin: 10px 0;
 		padding: 0;
 	}
+
+	.hover-style button,
+	.current-updates-one button,
+	.current-updates-two button {
+		margin-top: 8px;
+		padding: 7px 14px;
+		font-size: 18px;
+		font-family: open;
+	}
+
+	.hover-style i {
+		display: none;
+	}
+
+	.hover-style h2 {
+		padding: 2px;
+		font-size: 1.6rem;
+		font-family: open;
+	}
+
+	.current-updates-one h2,
+	.current-updates-two h2 {
+		font-size: 1.4rem;
+	}
+
+	.updates-board-container {
+		height: 63vh;
+	}
+
 	footer div[class*="service"] h3 {
 		padding: 0;
 		font-size: 18px;
 		margin: 0;
 	}
+
 	footer div[class*="service"] h5 {
 		margin: 0;
 		padding: 0;
 		font-size: 15px;
 	}
+
 	footer div[class*="service"] {
 		padding: 0;
 	}
+
 	footer div[class*="service"] h6,
 	footer div[class*="service"] p {
 		font-size: 14px;
 		margin: 0;
 	}
+
 	footer div[class*="service"] .col-6,
 	footer div[class*="service"] .col-6 p {
 		padding: 2px 20px;
 	}
+
 	footer div[class*="service"] h5 {
 		padding-bottom: 0;
 	}
+
 	.col h4 {
 		font-size: 18px;
 	}
+
 	.nested div:first-child {
 		font-size: 12px;
 		padding: 10px 50px;
 	}
+
 	.nested div:last-child {
 		padding: 10px 2px 0;
 		font-size: 12px;
 	}
+
 	footer .address,
 	footer .parish-office {
 		padding: 20px 40px;
 	}
+
 	footer div[class*="service"] {
 		padding: 30px;
 	}
+
 	footer .about-us button {
 		width: 80%;
 	}
+
 	footer .col p {
 		font-size: 11px;
 	}
+
 	.footer-bottom .made-by {
 		padding: 10px;
 	}
+
 	footer .footer-bottom i,
 	footer .footer-bottom i a {
 		padding: 7px;
 		font-size: 16px;
 	}
+
 	footer .footer-bottom a i {
 		font-size: 40px;
 		position: fixed;
 		bottom: 10px;
 		right: 5px;
 	}
+
 	/*priest-carousel*/
 	.section-priests-container {
 		display: -webkit-box;
@@ -836,17 +976,20 @@ nav-tabs .nav-item {
 		display: flex;
 		width: 95vw;
 	}
+
 	.section-priests-container>div:nth-child(odd) {
 		margin-top: 0;
 		height: 100px;
 		width: 80px;
 	}
+
 	.section-priests-container>div:nth-child(even) {
 		margin-top: 120px;
 		margin-left: -85px;
 		height: 90vh;
 		width: 95vw;
 	}
+
 	.section-priests-container>div:nth-child(even) p {
 		color: whitesmoke;
 		text-align: justify;
@@ -855,100 +998,124 @@ nav-tabs .nav-item {
 		position: absolute;
 		left: 5px;
 	}
+
 	.priests blockquote h3 {
 		font-size: 12px;
 		line-height: 17px;
 		padding: 5px;
 	}
+
 	.section-priests-container .carousel-item>img {
 		margin: 0 auto;
 		width: 80px;
 		height: 100px;
 	}
+
 	.section-priests-container>div:nth-child(even) .tomaszewski-center:before {
 		display: none;
 	}
+
 	.section-priests-container>div:nth-child(even) .wierusz-center:before {
 		display: none;
 	}
+
 	/*section parish-figures*/
 	.parish-figures {
 		height: 250px;
 	}
+
 	.parish-figures-container {
 		height: 250px;
 	}
+
 	.parish-figures-container div>h5 {
 		font-size: 30px;
 	}
+
 	.number-caption {
 		font-size: 10px;
 		font-weight: bold;
 		color: darkred;
 	}
-	.area-number-caption {
-		-webkit-transform: translate(-10%, -600%);
-		    -ms-transform: translate(-10%, -600%);
-		        transform: translate(-10%, -600%);
-	}
-	.family-number-caption {
-		-webkit-transform: translate(440%, -600%);
-		    -ms-transform: translate(440%, -600%);
-		        transform: translate(440%, -600%);
-	}
-	.worship-groups-caption {
-		-webkit-transform: translate(217%, -600%);
-		    -ms-transform: translate(217%, -600%);
-		        transform: translate(217%, -600%);
-	}
+
 	.parish-figures .number-caption {
 		color: white;
 		font-size: 12px;
 	}
+
 	/*INTENCJE*/
 	.white-stripe {
 		height: 50px;
 	}
+
 	.table-image-container {
 		display: none;
 	}
+
 	.service-times ul>li:nth-child(5) {
 		margin-left: -15px;
 	}
+
 	/*SAKRAMENTY*/
 	.table-image-container {
 		display: none;
 	}
+
 	.my-container {
 		display: block;
 	}
+
 	.footer-bottom {
 		position: relative;
 		font-size: 12px;
 	}
+
 	.my-container .scrollspy-example {
 		height: 350px;
 	}
-	.my-container .scrollspy-example p {
+
+	.statistics-container div {
+		width: 15%;
+		height: 20%;
+	}
+
+	.my-container .scrollspy-example p,
+	.document-list {
 		font-size: 11px;
 	}
+
 	.my-container .scrollspy-example h4 {
 		font-size: 18px;
 	}
+
+	.scrollspy-example h5 {
+		font-size: 12px;
+	}
+
 	.statistics-container {
 		height: 150px;
 	}
-	.statistics-container:hover>.one {
-		height: 130px;
+
+	.statistics-container div:nth-child(2) {
+		left: 39%;
 	}
-	.statistics-container:hover>.two {
-		height: 145px;
+
+	.statistics-container div:nth-child(3) {
+		left: 70%;
 	}
-	.statistics-container:hover>.three {
-		height: 141px;
+
+	.statistics-container span:nth-of-type(1) {
+		left: 2%;
+		bottom: -15%;
 	}
-	.statistics-years span {
-		padding-left: 12px;
-		font-size: 14px;
+
+	.statistics-container span:nth-of-type(2) {
+		left: 35%;
+		bottom: -15%;
+	}
+
+	.statistics-container span:nth-of-type(3) {
+		left: 66%;
+		bottom: -15%;
 	}
 }
