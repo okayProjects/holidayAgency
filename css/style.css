@@ -6,6 +6,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	/* background-color: blue; */
 }
 
 .body-with-background-color {
@@ -65,8 +66,12 @@ body {
 }
 
 .navbar .dropdown-menu {
-	background-color: #e0d9d9;
+	background-color: #125558;
+
+	padding: 0 35px;
+	margin-left: 47px;
 }
+
 
 /*my-jumbotron-carousel*/
 .my-jumbotron-carousel {
@@ -846,14 +851,14 @@ footer .footer-bottom a i {
 	background-color: #F7F2F2;
 }
 
-.bands-container .maranatha {
+.bands-container .band {
 	display: flex;
 	height: 100vh;
 	/* justify-content: space-between; */
 
 }
 
-.maranatha p {
+.band p {
 	flex-basis: 35%;
 	align-self: center;
 	font-family: cursive;
@@ -864,7 +869,9 @@ footer .footer-bottom a i {
 	box-shadow: 13px 0px 38px 13px;
 }
 
-.maranatha .maranatha-pictures {
+
+
+.band .band-pictures {
 	flex-basis: 60%;
 	display: flex;
 	flex-wrap: wrap;
@@ -1185,7 +1192,8 @@ footer .footer-bottom a i {
 		height: 85vh;
 	}
 
-	.bands-container .maranatha {
+
+	.bands-container .band {
 		display: flex;
 		height: 50vh;
 		flex-direction: column;
@@ -1195,13 +1203,13 @@ footer .footer-bottom a i {
 		display: none;
 	}
 
-	.maranatha p {
+	.band p {
 		padding: 3px 7px;
 		font-size: 13px;
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	}
 
-	.maranatha .maranatha-pictures {
+	.band .band-pictures {
 		flex-basis: 60%;
 		display: flex;
 		flex-wrap: wrap;

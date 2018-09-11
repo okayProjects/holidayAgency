@@ -43,10 +43,6 @@ $('.scrollspy-example').scroll(function () {
 	})
 });
 
-// $(window).scroll(function () {
-// 	$("nav").addClass('navbar-scroll');
-// });
-
 $(window).scroll(function () {
 	if ($(document).scrollTop() > 600) {
 		$("#to-the-top").css('display', 'block');

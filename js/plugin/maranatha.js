@@ -1,15 +1,15 @@
-var slides = [
-    {src: './images/m1.jpeg'},
-    {src: './images/m2.jpeg'},
-    {src: './images/m3.jpeg'},
-    {src: './images/m4.jpeg'}
+var slidesMaranatha = [
+    {src: '../images/m1.jpeg'},
+    {src: '../images/m2.jpeg'},
+    {src: '../images/m3.jpeg'},
+    {src: '../images/m4.jpeg'}
     
 ];
 
 $('.carousel-demo').jR3DCarousel({
   height: 300, 
   width: 450,
-  slides: slides,
+  slides: slidesMaranatha,
   animationCurve: 'ease-in-out',
   animationInterval: 3000,
   navigation: 'squares',
