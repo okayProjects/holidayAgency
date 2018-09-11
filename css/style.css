@@ -6,7 +6,6 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	/* background-color: blue; */
 }
 
 .body-with-background-color {
@@ -65,13 +64,14 @@ body {
 	margin: 5px -5px;
 }
 
-.navbar .dropdown-menu {
-	background-color: #125558;
-
-	padding: 0 35px;
-	margin-left: 47px;
+.navbar .dropdown-menu,
+.navbar .show {
+	background-color: #e0d9d9;
 }
 
+/* .navbar .navbar-nav {
+	background-color: #fff;
+} */
 
 /*my-jumbotron-carousel*/
 .my-jumbotron-carousel {
@@ -868,8 +868,6 @@ footer .footer-bottom a i {
 	background-color: rgba(4, 4, 4, 0.3);
 	box-shadow: 13px 0px 38px 13px;
 }
-
-
 
 .band .band-pictures {
 	flex-basis: 60%;
