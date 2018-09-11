@@ -1,6 +1,8 @@
 $(function () {
 	console.log('DOM loaded');
 });
+
+
 //intencje//
 
 

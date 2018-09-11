@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -39,7 +45,7 @@ body {
 }
 
 .navbar .navbar-brand img {
-	width: 70px;
+	width: 100px;
 	height: 80px;
 	border-radius: 20%;
 }
@@ -369,13 +375,13 @@ body {
 .number i {
 	font-size: 50px;
 	color: royalblue;
-	margin-top: 30px;
 }
 
 .parish-figures-container div>h5 {
 	font-size: 50px;
 	color: darkred;
 	font-weight: bold;
+	padding: 30px 0;
 }
 
 .number-caption {
@@ -582,7 +588,6 @@ footer .footer-bottom a i {
 	top: 50%;
 	transform: translate(0, -50%);
 	font-size: 18px;
-	line-height: 100%;
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
@@ -827,7 +832,50 @@ footer .footer-bottom a i {
 	left: 30.5%;
 }
 
+
+
 /*END OF SAKRAMENTY*/
+
+
+/* BANDS */
+
+.bands-container {
+	margin-top: 106px;
+	height: 100vh;
+	width: 100vw;
+	background-color: #F7F2F2;
+}
+
+.bands-container .maranatha {
+	display: flex;
+	height: 100vh;
+	/* justify-content: space-between; */
+
+}
+
+.maranatha p {
+	flex-basis: 35%;
+	align-self: center;
+	font-family: cursive;
+	text-align: justify;
+	padding: 10px 20px;
+	font-size: 18px;
+	background-color: rgba(4, 4, 4, 0.3);
+	box-shadow: 13px 0px 38px 13px;
+}
+
+.maranatha .maranatha-pictures {
+	flex-basis: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+
+
+
+
 @media(max-width: 768px) {
 	.my-jumbotron-carousel .carousel-item img {
 		max-width: 100%;
@@ -1043,6 +1091,18 @@ footer .footer-bottom a i {
 		font-size: 12px;
 	}
 
+	.number i {
+		font-size: 30px;
+
+	}
+
+	.parish-figures-container div>h5 {
+		font-size: 30px;
+
+		padding: 15px 0;
+	}
+
+
 	/*INTENCJE*/
 	.white-stripe {
 		height: 50px;
@@ -1117,5 +1177,41 @@ footer .footer-bottom a i {
 	.statistics-container span:nth-of-type(3) {
 		left: 66%;
 		bottom: -15%;
+	}
+
+	/* BANDS */
+	.bands-container {
+		margin-top: 74px;
+		height: 85vh;
+	}
+
+	.bands-container .maranatha {
+		display: flex;
+		height: 50vh;
+		flex-direction: column;
+	}
+
+	.carousel-demo-mobile {
+		display: none;
+	}
+
+	.maranatha p {
+		padding: 3px 7px;
+		font-size: 13px;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	}
+
+	.maranatha .maranatha-pictures {
+		flex-basis: 60%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+}
+
+@media(max-width: 768px)and (orientation: landscape) {
+	.bands-container {
+		height: 135vh;
 	}
 }
