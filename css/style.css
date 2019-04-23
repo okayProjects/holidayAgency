@@ -30,7 +30,7 @@ body {
 .navbar .navbar-nav .nav-link {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 16px;
 	margin-left: 40px;
 }
 
@@ -44,11 +44,11 @@ body {
 	transform: scale(1.1);
 }
 
-.navbar .navbar-brand img {
+/* .navbar .navbar-brand img {
 	width: 100px;
 	height: 80px;
 	border-radius: 20%;
-}
+} */
 
 .navbar .navbar-toggler {
 	background-color: #fff;
@@ -64,16 +64,15 @@ body {
 	margin: 5px -5px;
 }
 
+.navbar-brand {
+	color: #fff;
+}
 
+.navbar .dropdown-menu,
 .navbar .show {
 	background-color: #e0d9d9;
 }
 
-/* .navbar .navbar-nav {
-	background-color: #fff;
-} */
-
-/*my-jumbotron-carousel*/
 .my-jumbotron-carousel {
 	position: fixed;
 	left: 0;
@@ -82,22 +81,21 @@ body {
 	z-index: 1;
 }
 
-.my-jumbotron-carousel .carousel {
-	width: 100%;
+/* .my-jumbotron-carousel .carousel {
+	width: 100vw;
 	height: 100vh;
-}
+} */
 
 .my-jumbotron-carousel .carousel-item {
-	-webkit-animation: scale 60s infinite;
-	animation: scale 60s infinite;
-	-webkit-animation-delay: 0.7s;
-	animation-delay: 0.7s;
+	-webkit-animation: scale 30s infinite;
+	animation: scale 30s infinite;
+	width: 100vw;
+	height: 100vh;
 }
 
 .my-jumbotron-carousel .carousel-item img {
 	width: 100%;
-	height: 770px;
-	opacity: 0.7;
+	height: 100%;
 }
 
 @-webkit-keyframes scale {
@@ -105,14 +103,12 @@ body {
 		display: block;
 		-webkit-transform: scale(1);
 		transform: scale(1);
-		opacity: 0.6;
 	}
 
 	100% {
 		display: block;
-		-webkit-transform: scale(1.4);
-		transform: scale(1.4);
-		opacity: 1;
+		-webkit-transform: scale(1.14);
+		transform: scale(1.14);
 	}
 }
 
@@ -125,34 +121,28 @@ body {
 
 	100% {
 		display: block;
-		-webkit-transform: scale(1.4);
-		transform: scale(1.4);
+		-webkit-transform: scale(1.14);
+		transform: scale(1.14);
 	}
 }
 
 .my-jumbotron-carousel .carousel-caption {
-	width: 35%;
-	height: 20%;
+	width: 25%;
+	height: 10%;
 	background-color: rgba(0, 0, 0, 0.2);
-	margin: 0 auto;
-	margin-bottom: 4%;
+	margin: 10% 20% 10% 40%;
 	border-radius: 5px;
-	padding: 5px;
+	/* padding: 5px; */
 	-webkit-box-shadow: 2px 2px 6px #000;
 	box-shadow: 2px 2px 6px #000;
 }
 
-.my-jumbotron-carousel .carousel-caption h5,
-.carousel-caption p {
+.my-jumbotron-carousel .carousel-caption h5 {
 	font-weight: bold;
 	color: #fff;
 	text-align: center;
 	letter-spacing: 2px;
-}
-
-.my-jumbotron-carousel .carousel-caption h5 {
-	font-size: 25px;
-	margin: 2.5% 0;
+	font-size: 35px;
 }
 
 /*updates*/
@@ -233,7 +223,8 @@ body {
 
 .hover-style button,
 .current-updates-one button,
-.current-updates-two button {
+.current-updates-two button,
+.current-updates-three button {
 	margin-top: 14px;
 	padding: 15px 25px;
 	font-size: 25px;
@@ -245,14 +236,17 @@ body {
 .updates-board-container div:nth-child(2) i {
 	color: green;
 }
+.updates-board-container div:nth-child(3) i {
+	color: red;
+}
 
 .hide {
 	display: none;
 }
-
+/* 
 .afterClickButton {
 	margin-bottom: 30px;
-}
+} */
 
 /*priest-carousel*/
 .priests {
@@ -596,7 +590,7 @@ footer .footer-bottom a i {
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
-	animation: changeText 200s linear both;
+	animation: changeText 200s linear both infinite;
 }
 
 @keyframes changeText {
@@ -887,10 +881,10 @@ footer .footer-bottom a i {
 		height: 250px;
 	}
 
-	.navbar .navbar-brand img {
+	/* .navbar .navbar-brand img {
 		width: 40px;
 		height: 45px;
-	}
+	} */
 
 	.my-jumbotron-carousel {
 		position: initial;
