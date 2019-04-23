@@ -243,24 +243,19 @@ body {
 .hide {
 	display: none;
 }
-/* 
-.afterClickButton {
-	margin-bottom: 30px;
-} */
 
-/*priest-carousel*/
-.priests {
+.people {
 	position: relative;
 	height: 100vh;
-	background-image: url('../images/priests-background-image.jpg');
+	background-image: url('../images/people/people-backgound.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 1;
 }
 
-.section-priests-container {
+.section-people-container {
 	margin: 0 auto;
-	width: 80vw;
+	width: 75vw;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -269,26 +264,26 @@ body {
 	justify-content: space-between;
 }
 
-.section-priests-container>div:nth-child(odd) {
-	margin-top: 50px;
-	height: 300px;
+.section-people-container>div:nth-child(odd) {
+	margin-top: 30px;
+	height: 250px;
 	width: 250px;
 }
 
-.section-priests-container>div:nth-child(even) {
+.section-people-container>div:nth-child(even) {
 	margin-top: 20px;
 	height: 300px;
-	width: 700px;
+	width: 45%;
 	position: relative;
 }
 
-.section-priests-container>div:nth-child(even) p {
-	color: whitesmoke;
+.section-people-container>div:nth-child(even) p {
+	color: black;
 	text-align: justify;
 	position: relative;
 }
 
-.section-priests-container>div:nth-child(even) .wierusz-center:before {
+.section-people-container>div:nth-child(even) .left-center:before {
 	z-index: 1;
 	content: ' ';
 	width: 60px;
@@ -299,11 +294,11 @@ body {
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 	position: absolute;
-	border-left: 1px solid #fff;
-	border-bottom: 1px solid #fff;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
 }
 
-.section-priests-container>div:nth-child(even) .tomaszewski-center:before {
+.section-people-container>div:nth-child(even) .right-center:before {
 	right: -36px;
 	z-index: 1;
 	content: ' ';
@@ -314,42 +309,38 @@ body {
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 	position: absolute;
-	border-top: 1px solid #fff;
-	border-right: 1px solid #fff;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
 }
 
-.tomaszewski-center,
-.wierusz-center {
+.right-center,
+.left-center {
 	display: none;
 }
 
-.priests blockquote h3 {
+.people blockquote h3 {
 	line-height: 40px;
 	padding: 50px 0 50px 150px;
-	color: #fff;
-	font-family: 'Pacifico', cursive;
-	opacity: 0.8;
+	color: #000;
 }
 
-.section-priests-container .carousel-item>img {
+.section-people-container .carousel-item>img {
 	margin: 0 auto;
 	width: 250px;
-	height: 300px;
-	-webkit-filter: grayscale();
-	filter: grayscale();
+	height: 250px;
 }
 
-/*section parish-figures*/
-.parish-figures {
+/*section statistics-figures*/
+.statistics-figures {
 	position: relative;
-	background-image: url(../images/parish-figures-background.jpg);
+	background-image: url(../images/statistics-figures-background.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	height: 500px;
 	z-index: 1;
 }
 
-.parish-figures-container {
+.statistics-figures-container {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -376,7 +367,7 @@ body {
 	color: royalblue;
 }
 
-.parish-figures-container div>h5 {
+.statistics-figures-container div>h5 {
 	font-size: 50px;
 	color: darkred;
 	font-weight: bold;
@@ -983,7 +974,7 @@ footer .footer-bottom a i {
 	}
 
 	footer .address,
-	footer .parish-office {
+	footer .statistics-office {
 		padding: 20px 40px;
 	}
 
@@ -1046,7 +1037,7 @@ footer .footer-bottom a i {
 		left: 5px;
 	}
 
-	.priests blockquote h3 {
+	.people blockquote h3 {
 		font-size: 12px;
 		line-height: 17px;
 		padding: 5px;
@@ -1058,24 +1049,24 @@ footer .footer-bottom a i {
 		height: 100px;
 	}
 
-	.section-priests-container>div:nth-child(even) .tomaszewski-center:before {
+	.section-priests-container>div:nth-child(even) .right-center:before {
 		display: none;
 	}
 
-	.section-priests-container>div:nth-child(even) .wierusz-center:before {
+	.section-priests-container>div:nth-child(even) .left-center:before {
 		display: none;
 	}
 
-	/*section parish-figures*/
-	.parish-figures {
+	/*section statistics-figures*/
+	.statistics-figures {
 		height: 250px;
 	}
 
-	.parish-figures-container {
+	.statistics-figures-container {
 		height: 250px;
 	}
 
-	.parish-figures-container div>h5 {
+	.statistics-figures-container div>h5 {
 		font-size: 30px;
 	}
 
@@ -1085,7 +1076,7 @@ footer .footer-bottom a i {
 		color: darkred;
 	}
 
-	.parish-figures .number-caption {
+	.statistics-figures .number-caption {
 		color: white;
 		font-size: 12px;
 	}
@@ -1095,7 +1086,7 @@ footer .footer-bottom a i {
 
 	}
 
-	.parish-figures-container div>h5 {
+	.statistics-figures-container div>h5 {
 		font-size: 30px;
 
 		padding: 15px 0;

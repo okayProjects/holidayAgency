@@ -67,94 +67,29 @@ const showNotice = function () {
 		case $(this).hasClass('buttonOpenThree'):
 			$('.current-updates-three').toggleClass('hover-style');
 			$('.current-updates-one, .current-updates-two, .current-updates-three i').toggle();
-			$(' .current-updates-three button').text($(this).text() == 'Full screen' ? 'Back to the page' : 'Full screen');
+			$('.current-updates-three button').text($(this).text() == 'Full screen' ? 'Back to the page' : 'Full screen');
 			break;
 	}
 }
 
 openNoticeButtons.forEach(openNoticeButton => openNoticeButton.addEventListener('click', showNotice));
-// const updateButtonOne = document.querySelector('.buttonOpenOne');
-
-// function displayCardOne() {
-// 	const buttonOne = document.querySelector('.buttonOpenOne');
-// 	const updateHeading = document.querySelector('.updates-board h3');
-// 	const cardOne = document.querySelector('.current-updates-one');
-// 	const cardTwo = document.querySelector('.current-updates-two');
-// 	const pin = document.querySelector('.hover-style i');
-
-// 	cardOne.classList.toggle('hover-style');
-// 	cardTwo.classList.toggle('hide');
-// 	updateHeading.classList.toggle('hide');
-// 	buttonOne.classList.toggle('hide');
-// 	pin.classList.add('hide');
-// 	// updateButtonOne.classList.toggle('afterClickButton');
-// }
-// updateButtonOne.addEventListener('click', displayCardOne);
 
 
-// const closeUpdateButtonOne = document.querySelector('.hover-style button:nth-of-type(2)');
-
-// function showCardOne() {
-// 	const buttonOne = document.querySelector('.buttonOpenOne');
-// 	const updateHeading = document.querySelector('.updates-board h3');
-// 	const cardOne = document.querySelector('.current-updates-one');
-// 	const cardTwo = document.querySelector('.current-updates-two');
-// 	const pin = document.querySelector('.current-updates-one i');
-// 	cardOne.classList.toggle('hover-style');
-// 	cardTwo.classList.toggle('hide');
-// 	updateHeading.classList.toggle('hide');
-// 	buttonOne.classList.toggle('hide');
-// 	pin.classList.remove('hide');
-// }
-// closeUpdateButtonOne.addEventListener('click', showCardOne);
-
-
-// const updateButtonTwo = document.querySelector('.buttonOpenTwo');
-
-// function displayCardTwo() {
-// 	const buttonTwo = document.querySelector('.buttonOpenTwo');
-// 	const updateHeading = document.querySelector('.updates-board h3');
-// 	const cardOne = document.querySelector('.current-updates-one');
-// 	const cardTwo = document.querySelector('.current-updates-two');
-// 	const pin = document.querySelector('.current-updates-two i');
-// 	buttonTwo.classList.toggle('hide');
-// 	cardOne.classList.toggle('hide');
-// 	cardTwo.classList.toggle('hover-style');
-// 	updateHeading.classList.toggle('hide');
-// 	pin.classList.toggle('hide');
-// }
-// updateButtonTwo.addEventListener('click', displayCardTwo);
-
-
-// const closeUpdateButtonTwo = document.querySelector('.buttonCloseTwo');
-
-// function showCardTwo() {
-// 	const buttonTwo = document.querySelector('.buttonOpenTwo');
-// 	const updateHeading = document.querySelector('.updates-board h3');
-// 	const cardOne = document.querySelector('.current-updates-one');
-// 	const cardTwo = document.querySelector('.current-updates-two');
-// 	const pin = document.querySelector('.current-updates-two i');
-// 	buttonTwo.classList.toggle('hide');
-// 	cardOne.classList.toggle('hide');
-// 	cardTwo.classList.toggle('hover-style');
-// 	updateHeading.classList.toggle('hide');
-// 	pin.classList.toggle('hide');
-// }
-// closeUpdateButtonTwo.addEventListener('click', showCardTwo)
-
-
-$('.wierusz-inner').hover(function () {
-	$('.wierusz-center').fadeIn(1500);
-}, function () {
-	$('.wierusz-center').fadeOut(500);
+$('.left-inner').hover(() => {
+	$('.left-center').fadeIn(1500);
+}, () => {
+	$('.left-center').fadeOut(500);
 });
 
 
-$('.tomaszewski-inner').hover(function () {
-	$('.tomaszewski-center').fadeIn(1500);
-}, function () {
-	$('.tomaszewski-center').fadeOut(500);
+$('.right-inner').hover(() => {
+	$('.right-center').fadeIn(1500);
+}, () => {
+	$('.right-center').fadeOut(500);
 });
+
+const optionalNumber = 100;
+let currentNumberElement = [...$('.number h5')];
 
 
 // $(function () {
