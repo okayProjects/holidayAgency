@@ -17,10 +17,6 @@ body {
 	z-index: 3;
 }
 
-.navbar-scroll {
-	background-color: #274747;
-}
-
 .navbar .collapse {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
@@ -28,10 +24,15 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
-	color: #fff;
+	color: #131414;
+	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 16px;
 	margin-left: 40px;
+}
+
+.navbar-scroll {
+	background-color: #274747;
 }
 
 .navbar .navbar-nav .nav-link-scroll-change {
@@ -573,15 +574,25 @@ footer .footer-bottom a i {
 	position: absolute;
 	white-space: nowrap;
 	font-weight: bold;
-	color: #125558;
+	color: rgb(33, 192, 46);
 	left: 0;
 	top: 50%;
 	transform: translate(0, -50%);
-	font-size: 18px;
+	font-size: 25px;
+	letter-spacing: 5px;
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
-	animation: changeText 200s linear both infinite;
+	animation: changeText 15s linear both infinite;
+}
+
+.white-stripe p:nth-child(2) {
+	animation-delay: 5s;
+	color: rgb(221, 14, 128);
+}
+.white-stripe p:nth-child(3) {
+	animation-delay: 10s;
+	color:rgb(207, 195, 24);
 }
 
 @keyframes changeText {
@@ -589,7 +600,7 @@ footer .footer-bottom a i {
 		transform: translate(100%, -50%);
 	}
 
-	/* 3% {
+	3% {
 		transform: translate(100%, -50%);
 	}
 
@@ -603,9 +614,9 @@ footer .footer-bottom a i {
 
 	33% {
 		transform: translate(-100%, -50%);
-	} */
+	}
 	100% {
-		transform: translate(-1340%, -50%);
+		transform: translate(-100%, -50%);
 	}
 }
 
@@ -644,7 +655,7 @@ footer .footer-bottom a i {
 .table-image-container {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
-	flex: 1;
+	flex: 2;
 	padding-right: 20px;
 }
 
@@ -656,7 +667,7 @@ footer .footer-bottom a i {
 
 .table-image-container img {
 	width: 100%;
-	height: 170px;
+	height: 94%;
 	border-radius: 10px;
 }
 
@@ -734,7 +745,6 @@ footer .footer-bottom a i {
 
 .my-container .scrollspy-example h5 {
 	color: #dbd9d9;
-	padding: 30px 0;
 }
 
 .my-container .scrollspy-example h4 {
@@ -869,7 +879,7 @@ footer .footer-bottom a i {
 @media(max-width: 768px) {
 	.my-jumbotron-carousel .carousel-item img {
 		max-width: 100%;
-		height: 250px;
+		height: 300px;
 	}
 
 	/* .navbar .navbar-brand img {
@@ -886,6 +896,10 @@ footer .footer-bottom a i {
 		margin: 0;
 		padding: 20px 0 0;
 		height: 550px;
+	}
+
+	.updates-board h3 {
+		font-size: 30px;
 	}
 
 	.updates-board p,
@@ -1008,27 +1022,27 @@ footer .footer-bottom a i {
 	}
 
 	/*priest-carousel*/
-	.section-priests-container {
+	.section-people-container {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 		width: 95vw;
 	}
 
-	.section-priests-container>div:nth-child(odd) {
+	.section-people-container>div:nth-child(odd) {
 		margin-top: 0;
 		height: 100px;
 		width: 80px;
 	}
 
-	.section-priests-container>div:nth-child(even) {
+	.section-people-container>div:nth-child(even) {
 		margin-top: 120px;
 		margin-left: -85px;
 		height: 90vh;
 		width: 95vw;
 	}
 
-	.section-priests-container>div:nth-child(even) p {
+	.section-people-container>div:nth-child(even) p {
 		color: whitesmoke;
 		text-align: justify;
 		font-size: 10px;
@@ -1043,17 +1057,17 @@ footer .footer-bottom a i {
 		padding: 5px;
 	}
 
-	.section-priests-container .carousel-item>img {
+	.section-people-container .carousel-item>img {
 		margin: 0 auto;
 		width: 80px;
 		height: 100px;
 	}
 
-	.section-priests-container>div:nth-child(even) .right-center:before {
+	.section-people-container>div:nth-child(even) .right-center:before {
 		display: none;
 	}
 
-	.section-priests-container>div:nth-child(even) .left-center:before {
+	.section-people-container>div:nth-child(even) .left-center:before {
 		display: none;
 	}
 

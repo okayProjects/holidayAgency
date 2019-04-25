@@ -1,8 +1,3 @@
-$(function () {
-	console.log('DOM loaded');
-});
-
-
 //intencje//
 
 
@@ -30,6 +25,7 @@ $('.fara').mouseleave(function () {
 
 $(window).on('scroll', function () {
 	$("nav").addClass('navbar-scroll');
+	$('.navbar .navbar-nav .nav-link').css('color', 'white');
 });
 
 $('.scrollspy-example').on('scroll', function () {
@@ -88,8 +84,43 @@ $('.right-inner').hover(() => {
 	$('.right-center').fadeOut(500);
 });
 
-const optionalNumber = 100;
-let currentNumberElement = [...$('.number h5')];
+
+
+
+
+
+
+const countTo = () => {
+	const optionalNumber = 100;
+	const areah5 = $('.area-number h5');
+	let currentAreaH5 = +$(areah5).text();
+	const maxArea = $('.area-number').data('final-number');
+
+	const clienth5 = $('.client-number h5');
+	let currentClientH5 = Number($(clienth5).text());
+	const maxClient = $('.client-number').data('final-number');
+
+	const projectsh5 = $('.projects-groups h5');
+	let currentProjectsH5 = +$(projectsh5).text();
+	const maxProjects = $('.projects-groups').data('final-number');
+
+	if (currentAreaH5 <= (maxArea || optionalNumber)) {
+		currentAreaH5 += 1;
+		areah5.text(currentAreaH5);
+	};
+
+	if (currentClientH5 <= (maxClient || optionalNumber)) {
+		currentClientH5 += 1;
+		clienth5.text(currentClientH5);
+	};
+
+	if (currentProjectsH5 <= (maxProjects || optionalNumber)) {
+		currentProjectsH5 += 1;
+		projectsh5.text(currentProjectsH5);
+	};
+}
+
+const index = setInterval(countTo, 5)
 
 
 // $(function () {
