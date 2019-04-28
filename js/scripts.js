@@ -36,8 +36,8 @@ $('.scrollspy-example').on('scroll', function () {
 });
 
 $(window).on('scroll', function () {
-
-	if ($(document).scrollTop() > $('.updates-board').offset().top) {
+	const arrowShowNow = $('.arrow-show-now').offset().top;
+	if ($(document).scrollTop() > arrowShowNow) {
 
 		$("#to-the-top").css('display', 'block');
 	} else {
@@ -47,7 +47,7 @@ $(window).on('scroll', function () {
 
 $("#to-the-top").on('click', () => {
 	$('body, html').animate({
-		scrollTop: $('.jumbotron').offset().top
+		scrollTop: $(window).height
 	})
 })
 
@@ -128,13 +128,19 @@ const countTo = () => {
 $(document).on('scroll', () => {
 	const currentScrollValue = $(this).scrollTop();
 	const windowHeight = $(window).height();
-	const statistics = $('.statistics-figures');
+	const statistics = $('section.statistics-figures');
 	const statisticsHeight = statistics.height();
-	const statisticsiguresFromTop = $(statistics).offset().top;
 
-	if (currentScrollValue > statisticsiguresFromTop + statisticsHeight - windowHeight) {
-		const index = setInterval(countTo, 200);
+
+	if ($(statistics).offset() === undefined) return
+	else {
+		const statisticsFiguresFromTop = $(statistics).offset().top;
+		if (currentScrollValue > statisticsFiguresFromTop + statisticsHeight - windowHeight) {
+			setInterval(countTo, 200);
+		}
 	}
+
+
 })
 
 

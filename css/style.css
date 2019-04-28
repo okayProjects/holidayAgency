@@ -9,7 +9,7 @@ body {
 }
 
 .body-with-background-color {
-	background-image: linear-gradient(to right, rgba(255,0,0,0), #27472e);
+	background-image: linear-gradient(to left, rgba(255,0,0,0), #27472e);
 }
 
 .navbar {
@@ -186,6 +186,23 @@ body {
 
 .hover-style button {
 	border-radius: 20px;
+	background-color: darkseagreen;
+	transition: .5s;
+}
+.hover-style button:hover {
+	color: darkseagreen;
+	background-color: black;
+}
+
+.updates-board-container .buttonOpenOne {
+	color: black;
+	background-color: darkseagreen;
+	transition: .5s;
+}
+.updates-board-container .buttonOpenOne:hover {
+	color: darkseagreen;
+	background-color: black;
+	transition: .5s;
 }
 
 .updates-board p,
@@ -264,6 +281,9 @@ body {
 	margin-top: 30px;
 	height: 300px;
 	width: 300px;
+	background-color: lightgrey;
+	border-radius: 90px;
+	box-shadow: 2px 3px 1px grey;
 }
 
 .section-people-container>div:nth-child(even) {
@@ -391,7 +411,6 @@ footer {
 }
 
 .col h4 {
-	color: #DBD9D9;
 	text-transform: uppercase;
 	margin-bottom: 30px;
 	text-align: center;
@@ -400,11 +419,19 @@ footer {
 }
 
 footer .col p {
-	color: rgb(121, 115, 115);
 	font-size: 15px;
 	text-align: justify;
 	padding: 0 30px 0 0;
 	line-height: 30px;
+}
+
+footer .upper-part h4, 
+footer .upper-part p {
+	color: #fff;
+}
+
+footer .upper-part h4 {
+	text-shadow: 1px 3px 1px black;
 }
 
 footer .about-us .modal .card-header {
@@ -457,10 +484,9 @@ footer .about-us .modal button:hover {
 }
 
 .nested>div {
-	color: #DBD9D9;
+	color: #fff;
 	font-size: 15px;
 	padding: 0;
-	
 }
 
 .nested div:first-child {
@@ -628,6 +654,8 @@ footer .footer-bottom a i {
 	text-align: center;
 	padding: 50px 0;
 	margin: 0 auto;
+	letter-spacing: 6px;
+	text-shadow: 1px 3px 1px black;
 }
 
 .nav-tabs li a {
@@ -833,46 +861,6 @@ footer .footer-bottom a i {
 
 .statistics-container span:nth-of-type(3) {
 	left: 30.5%;
-}
-
-
-
-/*END OF SAKRAMENTY*/
-
-
-/* BANDS */
-
-.bands-container {
-	margin-top: 106px;
-	height: 100vh;
-	width: 100vw;
-	background-color: #F7F2F2;
-}
-
-.bands-container .band {
-	display: flex;
-	height: 100vh;
-	/* justify-content: space-between; */
-
-}
-
-.band p {
-	flex-basis: 35%;
-	align-self: center;
-	font-family: cursive;
-	text-align: justify;
-	padding: 10px 20px;
-	font-size: 18px;
-	background-color: rgba(4, 4, 4, 0.3);
-	box-shadow: 13px 0px 38px 13px;
-}
-
-.band .band-pictures {
-	flex-basis: 60%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
 }
 
 
@@ -1136,7 +1124,7 @@ footer .footer-bottom a i {
 	}
 
 
-	/*INTENCJE*/
+	/*offers*/
 	.white-stripe {
 		height: 50px;
 	}
@@ -1149,7 +1137,7 @@ footer .footer-bottom a i {
 		margin-left: -15px;
 	}
 
-	/*SAKRAMENTY*/
+	/*statistics*/
 	.table-image-container {
 		display: none;
 	}
@@ -1212,37 +1200,6 @@ footer .footer-bottom a i {
 		bottom: -15%;
 	}
 
-	/* BANDS */
-	.bands-container {
-		margin-top: 74px;
-		height: 85vh;
-	}
-
-
-	.bands-container .band {
-		display: flex;
-		height: 50vh;
-		flex-direction: column;
-	}
-
-	.carousel-demo-mobile {
-		display: none;
-	}
-
-	.band p {
-		padding: 3px 7px;
-		font-size: 13px;
-		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	}
-
-	.band .band-pictures {
-		flex-basis: 60%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-content: center;
-	}
-}
 
 @media(max-width: 768px)and (orientation: landscape) {
 	.bands-container {
