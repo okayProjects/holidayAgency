@@ -9,7 +9,7 @@ body {
 }
 
 .body-with-background-color {
-	background-color: #125558;
+	background-image: linear-gradient(to right, rgba(255,0,0,0), #27472e);
 }
 
 .navbar {
@@ -81,11 +81,6 @@ body {
 	width: 100vw;
 	z-index: 1;
 }
-
-/* .my-jumbotron-carousel .carousel {
-	width: 100vw;
-	height: 100vh;
-} */
 
 .my-jumbotron-carousel .carousel-item {
 	-webkit-animation: scale 30s infinite;
@@ -267,14 +262,14 @@ body {
 
 .section-people-container>div:nth-child(odd) {
 	margin-top: 30px;
-	height: 250px;
-	width: 250px;
+	height: 300px;
+	width: 300px;
 }
 
 .section-people-container>div:nth-child(even) {
 	margin-top: 20px;
 	height: 300px;
-	width: 45%;
+	width: 35%;
 	position: relative;
 }
 
@@ -282,6 +277,9 @@ body {
 	color: black;
 	text-align: justify;
 	position: relative;
+	background-color: #ddd;
+	padding: 10px;
+	border: 1px dotted #000000;
 }
 
 .section-people-container>div:nth-child(even) .left-center:before {
@@ -320,15 +318,19 @@ body {
 }
 
 .people blockquote h3 {
-	line-height: 40px;
+	font-size: 40px;
 	padding: 50px 0 50px 150px;
 	color: #000;
+	text-shadow: 2px 3px 5px #310f80;
+	letter-spacing: 5px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .section-people-container .carousel-item>img {
 	margin: 0 auto;
-	width: 250px;
-	height: 250px;
+	width: 300px;
+	height: 300px;
+	cursor: pointer;
 }
 
 /*section statistics-figures*/
@@ -384,7 +386,7 @@ body {
 footer {
 	position: relative;
 	padding-top: 50px;
-	background-color: #274747;
+	background-image: linear-gradient(to right, rgba(255,0,0,0), #274747);
 	z-index: 1;
 }
 
@@ -398,7 +400,7 @@ footer {
 }
 
 footer .col p {
-	color: #DBD9D9;
+	color: rgb(121, 115, 115);
 	font-size: 15px;
 	text-align: justify;
 	padding: 0 30px 0 0;
@@ -458,6 +460,7 @@ footer .about-us .modal button:hover {
 	color: #DBD9D9;
 	font-size: 15px;
 	padding: 0;
+	
 }
 
 .nested div:first-child {
@@ -876,72 +879,139 @@ footer .footer-bottom a i {
 
 
 
-@media(max-width: 768px) {
-	.my-jumbotron-carousel .carousel-item img {
-		max-width: 100%;
-		height: 300px;
-	}
+@media(max-width: 1024px) {
+.my-jumbotron-carousel .carousel-item {
+	height: 45vh;
+}
 
-	/* .navbar .navbar-brand img {
-		width: 40px;
-		height: 45px;
-	} */
+/*updates*/
+.updates-board {
+	padding: 20px 0 0 0;
+	height: 70vh;
+	margin-top: 36vh;
+}
 
-	.my-jumbotron-carousel {
-		position: initial;
-	}
+.updates-board h3 {
+	font-size: 28px;
+	padding-bottom: 30px;
+	margin-bottom: 0px;
+}
 
-	/*updates*/
-	.updates-board {
-		margin: 0;
-		padding: 20px 0 0;
-		height: 550px;
-	}
+.updates-board-container {
+	height: 60vh;
+	overflow: auto;
+}
 
-	.updates-board h3 {
-		font-size: 30px;
-	}
+.hover-style {
+	position: relative;
+	flex-basis: 100%;
+	height: 80%;
+}
 
-	.updates-board p,
-	.updates-board h4 {
-		font-size: 13px;
-		padding: 20px 10px;
-	}
+.updates-board p,
+.updates-board h4 {
+	font-size: 12px;
+	padding: 10px;
+}
 
-	.updates-board ul>li {
-		font-size: 15px;
-		margin: 10px 0;
-		padding: 0;
-	}
+.updates-board ul>li {
+	font-size: 12px;
+	margin: 0 20px;
+}
 
-	.hover-style button,
-	.current-updates-one button,
-	.current-updates-two button {
-		margin-top: 8px;
-		padding: 7px 14px;
-		font-size: 18px;
-		font-family: open;
-	}
+.hover-style i {
+	top: 2%;
+	font-size: 20px;
+}
 
-	.hover-style i {
-		display: none;
-	}
+.hover-style h2 {
+	padding: 10px;
+	font-size: 16px;
+}
 
-	.hover-style h2 {
-		padding: 2px;
-		font-size: 1.6rem;
-		font-family: open;
-	}
+.hover-style button,
+.current-updates-one button,
+.current-updates-two button,
+.current-updates-three button {
+	margin-top: 8px;
+	padding: 12px;
+	font-size: 18px;
+}
 
-	.current-updates-one h2,
-	.current-updates-two h2 {
-		font-size: 1.4rem;
-	}
 
-	.updates-board-container {
-		height: 63vh;
-	}
+.people {
+	height: 50vh;
+}
 
+.section-people-container {
+	width: 85vw;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.section-people-container>div:nth-child(odd) {
+	margin-top: 0;
+	height: 120px;
+	flex-basis: 40%;
+}
+
+.section-people-container>div:nth-child(even) {
+	margin-top: 20px;
+	height: 300px;
+	flex-basis: 100%;
+	order: 2;
+	position: relative;
+}
+
+.section-people-container .carousel-item>img {
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+}
+
+.section-people-container>div:nth-child(even) p {
+
+	font-size: 12px;
+	padding: 5px;
+}
+
+.section-people-container>div:nth-child(even) .left-center:before {
+	z-index: 1;
+	content: ' ';
+	width: 60px;
+	height: 60px;
+	top: 73px;
+	left: -41px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.section-people-container>div:nth-child(even) .right-center:before {
+	right: -36px;
+	z-index: 1;
+	content: ' ';
+	width: 60px;
+	height: 60px;
+	top: 73px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+.people blockquote h3 {
+	font-size: 16px;
+	padding: 10px;
+	letter-spacing: 3px;
+}
+
+/* footer */
 	footer div[class*="service"] h3 {
 		padding: 0;
 		font-size: 18px;
@@ -988,8 +1058,10 @@ footer .footer-bottom a i {
 	}
 
 	footer .address,
-	footer .statistics-office {
+	footer .statistics-office,
+	footer .about-us {
 		padding: 20px 40px;
+		
 	}
 
 	footer div[class*="service"] {
@@ -998,10 +1070,15 @@ footer .footer-bottom a i {
 
 	footer .about-us button {
 		width: 80%;
+		color: black;
+		border-color: black;
 	}
 
 	footer .col p {
 		font-size: 11px;
+		line-height: 17px;
+		text-align: justify;
+		color: black;
 	}
 
 	.footer-bottom .made-by {
@@ -1021,55 +1098,7 @@ footer .footer-bottom a i {
 		right: 5px;
 	}
 
-	/*priest-carousel*/
-	.section-people-container {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		width: 95vw;
-	}
 
-	.section-people-container>div:nth-child(odd) {
-		margin-top: 0;
-		height: 100px;
-		width: 80px;
-	}
-
-	.section-people-container>div:nth-child(even) {
-		margin-top: 120px;
-		margin-left: -85px;
-		height: 90vh;
-		width: 95vw;
-	}
-
-	.section-people-container>div:nth-child(even) p {
-		color: whitesmoke;
-		text-align: justify;
-		font-size: 10px;
-		width: 95vw;
-		position: absolute;
-		left: 5px;
-	}
-
-	.people blockquote h3 {
-		font-size: 12px;
-		line-height: 17px;
-		padding: 5px;
-	}
-
-	.section-people-container .carousel-item>img {
-		margin: 0 auto;
-		width: 80px;
-		height: 100px;
-	}
-
-	.section-people-container>div:nth-child(even) .right-center:before {
-		display: none;
-	}
-
-	.section-people-container>div:nth-child(even) .left-center:before {
-		display: none;
-	}
 
 	/*section statistics-figures*/
 	.statistics-figures {

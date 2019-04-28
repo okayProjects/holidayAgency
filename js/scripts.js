@@ -36,12 +36,20 @@ $('.scrollspy-example').on('scroll', function () {
 });
 
 $(window).on('scroll', function () {
-	if ($(document).scrollTop() > 600) {
+
+	if ($(document).scrollTop() > $('.updates-board').offset().top) {
+
 		$("#to-the-top").css('display', 'block');
 	} else {
 		$("#to-the-top").css('display', 'none');
 	}
 });
+
+$("#to-the-top").on('click', () => {
+	$('body, html').animate({
+		scrollTop: $('.jumbotron').offset().top
+	})
+})
 
 
 
@@ -87,9 +95,6 @@ $('.right-inner').hover(() => {
 
 
 
-
-
-
 const countTo = () => {
 	const optionalNumber = 100;
 	const areah5 = $('.area-number h5');
@@ -120,7 +125,19 @@ const countTo = () => {
 	};
 }
 
-const index = setInterval(countTo, 5)
+$(document).on('scroll', () => {
+	const currentScrollValue = $(this).scrollTop();
+	const windowHeight = $(window).height();
+	const statistics = $('.statistics-figures');
+	const statisticsHeight = statistics.height();
+	const statisticsiguresFromTop = $(statistics).offset().top;
+
+	if (currentScrollValue > statisticsiguresFromTop + statisticsHeight - windowHeight) {
+		const index = setInterval(countTo, 200);
+	}
+})
+
+
 
 
 // $(function () {
