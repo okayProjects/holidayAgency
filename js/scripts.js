@@ -51,6 +51,12 @@ $("#to-the-top").on('click', () => {
 	})
 })
 
+$(".carousel-start-button button").on('click', () => {
+	$('body, html').animate({
+		scrollTop: $('.arrow-show-now').offset().top
+	})
+})
+
 
 
 const openNoticeButtons = [...document.querySelectorAll('.openNoticeButton')];
